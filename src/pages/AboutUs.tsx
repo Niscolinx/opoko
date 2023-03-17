@@ -5,13 +5,14 @@ interface Card {
   description: string
   icon: string
 }
-const card = () => {
+const Card = () => {
   return (
     <div>
 
     </div>
   )
 }
+
 
 function AboutUs() {
   return (

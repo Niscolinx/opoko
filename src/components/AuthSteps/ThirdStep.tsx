@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react';
 import OtpInput from 'react-otp-input';
-import { AuthContext } from '../../Context/AppContext';
 import { useAppSelector } from '../../store/app/hooks';
-import { selectUser } from '../../store/features/user/user';
 
 function ThirdStep() {
   type ValidationError = {
@@ -10,11 +8,8 @@ function ThirdStep() {
     password: string;
   };
 
-  const AuthContextData = useContext(AuthContext);
 
-  const { setStep, notify } = AuthContextData;
 
-  const userSelector = useAppSelector(selectUser);
 
   const [otp, setOtp] = useState<string>('');
   const [message, setMessage] = useState<{
@@ -45,10 +40,10 @@ function ThirdStep() {
     }
 
     if (otp !== '4444') {
-      return notify('Wrong OTP code');
+      //return notify('Wrong OTP code');
     }
 
-    setStep(3);
+    //setStep(3);
   };
 
   return (
@@ -63,7 +58,7 @@ function ThirdStep() {
           </p>
         )}
         <p className="text-center">
-          Enter the email we sent to {userSelector.email}
+          {/* Enter the email we sent to {userSelector.email} */}
         </p>
         <OtpInput
           value={otp}

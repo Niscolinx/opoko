@@ -91,7 +91,7 @@ function AboutUs() {
             description={
               'A pre-set body of questions designed to generate a report on answers given. This section grants the user an immediate opinion'
             }
-            Icon={<GoLaw />}
+            Icon={<TbMessageDots />}
             bgColor={'bg-[#464545]'}
           />
         </div>

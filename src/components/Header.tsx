@@ -14,29 +14,29 @@ const Header = () => {
         {path.map((item) => {
           console.log({ item, pathToSwitch });
           return (
-            <>
-              <input
-                type="radio"
-                name="header"
-                id={item}
-                checked={item === pathToSwitch}
-                className="hidden"
-                onChange={() => setPathToSwitch(item)}
-              />
-              <label
-                htmlFor={item}
-                className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
-              >
-                <Link key={item} to={`/${item}`}>
+            <Link key={item} to={`/${item}`}>
+              <>
+                <input
+                  type="radio"
+                  name="header"
+                  id={item}
+                  checked={item === pathToSwitch}
+                  className="hidden"
+                  onChange={() => setPathToSwitch(item)}
+                />
+                <label
+                  htmlFor={item}
+                  className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
+                >
                   {item.replace('-', ' ')}
                   {item === pathToSwitch && (
                     <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
                       &nbsp;
                     </span>
                   )}
-                </Link>
-              </label>
-            </>
+                </label>
+              </>
+            </Link>
           );
         })}
       </div>

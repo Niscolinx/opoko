@@ -98,7 +98,7 @@ function AboutUs() {
         </div>
       </section>
       <section className="grid gap-8">
-        <p className="text-[4rem]">Our Services</p>
+        <p className="text-[4rem]">Frequently Asked Questions</p>
       </section>
     </div>
   );

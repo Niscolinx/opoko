@@ -21,6 +21,7 @@ const Header = () => {
               />
               <label htmlFor={item} className={`capitalize`}>
                 {item}
+                <span className=''></span>
               </label>
             </Fragment>
           );

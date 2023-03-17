@@ -1,6 +1,5 @@
 import React, { useState, useEffect, SetStateAction, useContext } from 'react';
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
-import { useAppDispatch } from '../../store/app/hooks';
 
 import { useNavigate } from 'react-router';
 
@@ -13,8 +12,8 @@ export const SecondSignUpStep = () => {
 
 
 
-  const dispatch = useAppDispatch();
-  const redirectToLogin = () => dispatch(open('login'));
+  // const dispatch = useAppDispatch();
+  // const redirectToLogin = () => dispatch(open('login'));
   const [disabled, setDisabled] = useState(true);
   const [validationError, setValidationError] = useState<InputTypes | null>(
     null
@@ -188,7 +187,7 @@ export const SecondSignUpStep = () => {
       </form>
 
       <p className="authText mt-10">
-        I have an account? <button onClick={redirectToLogin}> Log In</button>
+        {/* I have an account? <button onClick={redirectToLogin}> Log In</button> */}
       </p>
     </div>
   );
@@ -198,8 +197,7 @@ export const SecondLoginStep = () => {
   const [eyeIcon, setEyeIcon] = useState(false);
   const navigate = useNavigate();
 
-  const dispatch = useAppDispatch();
-  const redirectToRegister = () => dispatch(open('signup'));
+  // const redirectToRegister = () => dispatch(open('signup'));
 
   interface InputTypes {
     email: string;
@@ -222,7 +220,7 @@ export const SecondLoginStep = () => {
     setLoading(true);
     setTimeout(() => {
       navigate('/dashboard');
-      dispatch(close())
+      // dispatch(close())
     }, 1000);
   };
 
@@ -384,7 +382,7 @@ export const SecondLoginStep = () => {
       </form>
       <p className="authText mt-10">
         Don't have an account?{' '}
-        <button onClick={redirectToRegister}> Create an account</button>
+        {/* <button onClick={redirectToRegister}> Create an account</button> */}
       </p>
     </div>
   );

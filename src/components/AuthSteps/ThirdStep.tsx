@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import OtpInput from 'react-otp-input';
-import { useAppSelector } from '../../store/app/hooks';
 
 function ThirdStep() {
   type ValidationError = {

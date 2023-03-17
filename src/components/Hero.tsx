@@ -1,7 +1,5 @@
-import { useAppDispatch } from '../store/app/hooks';
 
 const Hero = () => {
-  const dispatch = useAppDispatch();
 
   // const openModal = () => dispatch(open('signup'));
 

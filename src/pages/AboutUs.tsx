@@ -2,9 +2,11 @@ import React from 'react';
 
 function AboutUs() {
   return (
-    <div className="grid gap-8">
+    <div className="grid gap-16">
       <div className='grid gap-16 text-justify'>
-        <p className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto">
+        <p className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto" style={{
+          lineHeight: '5rem'
+        }}>
           The one-stop shop for all things law
         </p>
         <p>
@@ -26,6 +28,9 @@ function AboutUs() {
           legal issues or stay abreast of the latest legal developments, Opoko
           has everything you need to stay informed.
         </p>
+      </div>
+      <div>
+        <p className='text-[4rem]'>Our Services</p>
       </div>
     </div>
   );

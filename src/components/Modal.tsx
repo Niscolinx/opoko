@@ -10,12 +10,11 @@ interface IModal {
 function Modal({ children }: IModal) {
   const dispatch = useAppDispatch();
   const [step, setStep] = useState(0);
-  const [isToast, setIsToast] = useState(false)
-
+  const [isToast, setIsToast] = useState(false);
 
   const closeModal = () => dispatch(close());
   const notify = (message: string = 'Wrong OTP code') => {
-    setIsToast(true)
+    setIsToast(true);
     toast(message, {
       type: 'error',
       className: 'bg-[#FDE9E9] text-[#E82830]',
@@ -23,32 +22,33 @@ function Modal({ children }: IModal) {
   };
 
   return (
-    <AuthContext.Provider
-      value={{
-        setStep,
-        step,
-        notify,
-      }}
-    >
-      <div>
-        {isOpen && (
-          <div className="authDialog relative z-10 " id="authDialog">
-            {isToast && (
-              <ToastContainer />
-            
-            )}
-            <div className="authDialog__container">
-              <button className="authDialog__button" onClick={closeModal}>
-                <GrFormClose className="text-3xl " />
-              </button>
+    <></>
+    // <AuthContext.Provider
+    //   value={{
+    //     setStep,
+    //     step,
+    //     notify,
+    //   }}
+    // >
+    //   <div>
+    //     {isOpen && (
+    //       <div className="authDialog relative z-10 " id="authDialog">
+    //         {isToast && (
+    //           <ToastContainer />
 
-              {children}
-            </div>
-          </div>
-        )}
-      </div>
-    </AuthContext.Provider>
-  )
+    //         )}
+    //         <div className="authDialog__container">
+    //           <button className="authDialog__button" onClick={closeModal}>
+    //             <GrFormClose className="text-3xl " />
+    //           </button>
+
+    //           {children}
+    //         </div>
+    //       </div>
+    //     )}
+    //   </div>
+    // </AuthContext.Provider>
+  );
 }
 
 export default Modal;

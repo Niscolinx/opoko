@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <div className="grid gap-8">
       <div className='grid gap-16 text-justify'>
-        <p className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem]">
+        <p className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto">
           The one-stop shop for all things law
         </p>
         <p>

@@ -1,32 +1,34 @@
 import React from 'react';
 
 interface Card {
-  title: string
-  description: string
-  Icon: string
-  bgColor: string
+  title: string;
+  description: string;
+  Icon: string;
+  bgColor: string;
 }
-const Card = ({title, description, Icon, bgColor}:Card) => {
+const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   return (
     <div className={`h-[40rem] grid gap-8 justify-start ${bgColor}`}>
-      <p className='font-medium text-[3rem]'>{title}</p>
-      <p className='text-[1.4rem]'>{description}</p>
-      <p>{<Icon/>}</p>
+      <p className="font-medium text-[3rem]">{title}</p>
+      <p className="text-[1.4rem]">{description}</p>
+      <p>{<Icon />}</p>
     </div>
-  )
-}
+  );
+};
 
 Card.description =
   'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times ';
 
-
 function AboutUs() {
   return (
     <div className="grid gap-16">
-      <div className='grid gap-16 text-justify'>
-        <p className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto" style={{
-          lineHeight: '5rem'
-        }}>
+      <div className="grid gap-16 text-justify">
+        <p
+          className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto"
+          style={{
+            lineHeight: '5rem',
+          }}
+        >
           The one-stop shop for all things law
         </p>
         <p>
@@ -49,8 +51,15 @@ function AboutUs() {
           has everything you need to stay informed.
         </p>
       </div>
-      <div>
-        <p className='text-[4rem]'>Our Services</p>
+      <div className="grid gap-8">
+        <p className="text-[4rem]">Our Services</p>
+
+        <div
+          className="grid gap-8"
+          style={{
+            gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
+          }}
+        ></div>
       </div>
     </div>
   );

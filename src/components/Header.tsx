@@ -5,9 +5,9 @@ const Header = () => {
   const [pathToSwitch, setPathToSwitch] = useState('home');
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center justify-between">
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
-      <div className="radioBox">
+      <div className="flex gap-8">
         {path.map((item) => {
           return (
             <Fragment key={item}>
@@ -26,7 +26,7 @@ const Header = () => {
           );
         })}
       </div>
-      <button>Login</button>
+      <button className='btn bg-gray-300 '>Login</button>
     </div>
   );
 };

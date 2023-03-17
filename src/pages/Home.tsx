@@ -3,7 +3,7 @@ import Auth from '../container/Auth';
 
 function Home() {
   return (
-    <div className="">
+    <div className="px-16">
       <Header />
 
       <Auth />

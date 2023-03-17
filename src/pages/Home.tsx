@@ -4,7 +4,8 @@ function Home() {
   return (
     <div className="grid grid-cols-2 items-center">
       <div className="grid gap-8">
-        <p className="text-[5rem] font-medium capitalize">
+       
+        <p className="text-[5rem] font-medium capitalize ">
           Get access to <span className="text-color-orange">the law</span> in
           just a few clicks
         </p>

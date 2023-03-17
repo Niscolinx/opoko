@@ -6,8 +6,9 @@ const Header = () => {
 
   return (
     <div className=''>
+        <img src="/asset/logo.svg" alt="" className='w-[12rem]'/>
       <div className="radioBox">
-        <div>
+      
           {path.map((item) => {
             return (
               <Fragment key={item}>
@@ -25,7 +26,7 @@ const Header = () => {
               </Fragment>
             );
           })}
-        </div>
+    
       </div>
     </div>
   );

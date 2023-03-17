@@ -17,7 +17,7 @@ import Pricing from '../pages/Pricing';
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<Layout />}>
-      <Route path="home" element={<Home />} />,
+      <Route path="/" element={<Home />} />,
       <Route path="about-us" element={<AboutUs />} />,
       <Route path="pricing" element={<Pricing />} />,
     </Route>,

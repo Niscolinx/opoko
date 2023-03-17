@@ -7,16 +7,14 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  console.log({location})
-  
+  console.log({ location });
+
   return (
-      <div className="grid items-center grid-cols-3" style={{
-        gridTemplateColumns: '1fr 1fr 1fr'
-      }}>
+    <div className="grid items-center grid-cols-3">
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
       <div className="flex justify-between">
         {path.map((item) => {
-        console.log(location.pathname, item);
+          console.log(location.pathname, item);
           return (
             <Link key={item} to={item}>
               <div
@@ -33,7 +31,9 @@ const Header = () => {
           );
         })}
       </div>
-      <button className="bg-gray-300 rounded-2xl px-16 py-4">Login</button>
+      <div className='flex justify-end'>
+        <button className="bg-gray-300 rounded-2xl px-16 py-4">Login</button>
+      </div>
     </div>
   );
 };

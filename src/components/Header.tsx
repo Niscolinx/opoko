@@ -5,7 +5,7 @@ const Header = () => {
   const [pathToSwitch, setPathToSwitch] = useState('home');
 
   return (
-    <div className='estateDetails'>
+    <div className=''>
       <div className="radioBox">
         <div>
           {path.map((item) => {

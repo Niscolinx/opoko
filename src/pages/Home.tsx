@@ -4,7 +4,9 @@ function Home() {
   return (
     <div className="grid grid-cols-2 items-center">
       <div className="grid gap-8 max-w-[50rem]">
-        <p className="text-[5rem] font-medium  ">
+        <p className="text-[5rem] font-medium " style={{
+            lineHeight: '5.6rem'
+        }}>
           Get access to <span className="text-color-orange capitalize font-bold">The Law</span> in
           just a few clicks
         </p>

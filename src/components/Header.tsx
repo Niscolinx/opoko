@@ -20,15 +20,19 @@ const Header = () => {
                 className="hidden"
                 onChange={() => setPathToSwitch(item)}
               />
-              <label htmlFor={item} className={`capitalize  cursor-pointer`}>
+              <label htmlFor={item} className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}>
                 {item.replace('-', ' ')}
-                {item === pathToSwitch && <span className=""></span>}
+                {item === pathToSwitch && (
+                  <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
+                    &nbsp;
+                  </span>
+                )}
               </label>
             </Link>
           );
         })}
       </div>
-      <button className='bg-gray-300 rounded-2xl px-16 py-4'>Login</button>
+      <button className="bg-gray-300 rounded-2xl px-16 py-4">Login</button>
     </div>
   );
 };

@@ -7,10 +7,9 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
 
-
   useEffect(() => {
     if (pathname === '/') {
-        console.log("the pathname", pathname)
+      console.log('the pathname', pathname);
     }
   }, [pathname]);
 
@@ -18,19 +17,20 @@ const Header = () => {
     <div className="grid items-center grid-cols-3">
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
       <div className="flex justify-between">
-        {path.map((item) => {
-          console.log(location.pathname, item);
+        {path.map((item, i) => {
+          console.log('location item', location.pathname, item);
           return (
             <Link key={item} to={item}>
               <div
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
                 {item.replace(/[-]/g, ' ')}
-                {`/${item}` === pathname && (
-                  <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
-                    &nbsp;
-                  </span>
-                )}
+                {(pathname === '/' && item === 'home') ||
+                  (`/${item}` === pathname && (
+                    <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
+                      &nbsp;
+                    </span>
+                  ))}
               </div>
             </Link>
           );

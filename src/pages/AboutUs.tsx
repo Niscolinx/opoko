@@ -99,6 +99,15 @@ function AboutUs() {
       </section>
       <section className="grid gap-8">
         <p className="text-[4rem]">Frequently Asked Questions</p>
+
+        <div className='grid grid-cols-8'>
+          <div>
+            
+          </div>
+          <div>
+
+          </div>
+        </div>
       </section>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { GoLaw } from 'react-icons/go';
 import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
+import {TbMessageDots} from 'react-icons/tb'
 
 interface Card {
   title: string;
@@ -16,7 +17,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
     >
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem] ">{description}</p>
-      <p className="text-[3rem]">{Icon}</p>
+      <p className="text-[3rem] mt-auto">{Icon}</p>
     </div>
   );
 };

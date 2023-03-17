@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GrFormClose } from 'react-icons/gr';
-import { AuthContext } from '../Context/AppContext';
 import { useAppDispatch, useAppSelector } from '../store/app/hooks';
-import { modalSelector, close } from '../store/features/modal';
 import { ToastContainer, toast } from 'react-toastify';
 
 interface IModal {
@@ -10,12 +8,10 @@ interface IModal {
 }
 
 function Modal({ children }: IModal) {
-  const modalData = useAppSelector(modalSelector);
   const dispatch = useAppDispatch();
   const [step, setStep] = useState(0);
   const [isToast, setIsToast] = useState(false)
 
-  const { isOpen } = modalData;
 
   const closeModal = () => dispatch(close());
   const notify = (message: string = 'Wrong OTP code') => {

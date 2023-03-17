@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex gap-8">
         {path.map((item) => {
           return (
-            <Link key={item} to={`/${item}`} >
+            <Link key={item} to={`/${item}`}>
               <input
                 type="radio"
                 name="header"
@@ -22,7 +22,7 @@ const Header = () => {
               />
               <label htmlFor={item} className={`capitalize  cursor-pointer`}>
                 {item.replace('-', ' ')}
-                <span className=''></span>
+                {item === pathToSwitch && <span className=""></span>}
               </label>
             </Link>
           );

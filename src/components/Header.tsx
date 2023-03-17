@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <div className=''>
-        <img src="/asset/logo.svg" alt="" className='w-[12rem]'/>
+        <img src="/asset/logo.svg" alt="" className='w-[12rem]' />
       <div className="radioBox">
       
           {path.map((item) => {

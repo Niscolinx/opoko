@@ -1,9 +1,7 @@
 import React, { useState, useEffect, SetStateAction, useContext } from 'react';
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
-import { AuthContext } from '../../Context/AppContext';
 import { useAppDispatch } from '../../store/app/hooks';
-import { updateUser } from '../../store/features/user/user';
-import { close, open } from '../../store/features/modal';
+
 import { useNavigate } from 'react-router';
 
 export const SecondSignUpStep = () => {
@@ -13,9 +11,7 @@ export const SecondSignUpStep = () => {
     email: string;
   }
 
-  const AuthContextData = useContext(AuthContext);
 
-  const { setStep } = AuthContextData;
 
   const dispatch = useAppDispatch();
   const redirectToLogin = () => dispatch(open('login'));
@@ -95,7 +91,6 @@ export const SecondSignUpStep = () => {
 
   const handleAuth = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('form submitted');
     const isValid = formValidate();
 
     if (!isValid) {
@@ -104,7 +99,7 @@ export const SecondSignUpStep = () => {
     }
 
     //dispatch(updateUser(inputField));
-    setStep(2);
+    //setStep(2);
   };
 
   const handleInputChange = (e: React.FormEvent<HTMLFormElement>) => {

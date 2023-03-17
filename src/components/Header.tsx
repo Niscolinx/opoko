@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const path = ['home', 'about', 'pricing'] as const;
+  const path = ['home', 'about-us', 'pricing'] as const;
   const [pathToSwitch, setPathToSwitch] = useState('home');
 
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex gap-8">
         {path.map((item) => {
           return (
-            <Link key={item} to='/about-us' >
+            <Link key={item} to={`/${item}`} >
               <input
                 type="radio"
                 name="header"
@@ -21,7 +21,7 @@ const Header = () => {
                 onChange={() => setPathToSwitch(item)}
               />
               <label htmlFor={item} className={`capitalize  cursor-pointer`}>
-                {item}
+                {item.replace('-', ' ')}
                 <span className=''></span>
               </label>
             </Link>

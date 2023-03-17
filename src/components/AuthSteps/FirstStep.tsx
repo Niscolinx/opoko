@@ -1,14 +1,10 @@
 import { Fragment, useContext, useEffect } from 'react';
-import { AuthContext } from '../../Context/AppContext';
-import { useAppDispatch } from '../../store/app/hooks';
-import { open } from '../../store/features/modal';
 
 export const FirstSignUpStep = () => {
-  const AuthContextData = useContext(AuthContext);
-  const dispatch = useAppDispatch();
-  const redirectToLogin = () => dispatch(open('login'));
 
-  const { setStep } = AuthContextData;
+  //const redirectToLogin = () => dispatch(open('login'));
+
+  //const { setStep } = AuthContextData;
 
 
 

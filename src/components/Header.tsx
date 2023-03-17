@@ -20,11 +20,6 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  useEffect(() => {
-    if (pathname === '/') {
-      console.log('the pathname', pathname);
-    }
-  }, [pathname]);
 
   return (
     <div className="grid items-center grid-cols-3">

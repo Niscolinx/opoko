@@ -10,6 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     if (pathname === '/') {
+        console.log("the pathname", pathname)
     }
   }, [pathname]);
 

@@ -4,7 +4,7 @@ import { GoLaw } from 'react-icons/go';
 interface Card {
   title: string;
   description: string;
-  Icon: string;
+  Icon: any;
   bgColor: string;
 }
 export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
@@ -12,7 +12,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
     <div className={`h-[40rem] grid gap-8 justify-start ${bgColor}`}>
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem]">{description}</p>
-      <p>{<Icon />}</p>
+      <p>{Icon}</p>
     </div>
   );
 };
@@ -61,7 +61,12 @@ function AboutUs() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
           }}
         >
-          <Card title={'The laws'} description={''} Icon={''} bgColor={''} />
+          <Card
+            title={'The laws'}
+            description={''}
+            Icon={<GoLaw/>}
+            bgColor={'bg-[#203C82]'}
+          />
         </div>
       </div>
     </div>

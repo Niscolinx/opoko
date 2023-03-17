@@ -1,4 +1,5 @@
 import React from 'react';
+import { GoLaw } from 'react-icons/go';
 
 interface Card {
   title: string;
@@ -6,7 +7,7 @@ interface Card {
   Icon: string;
   bgColor: string;
 }
-const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
+export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   return (
     <div className={`h-[40rem] grid gap-8 justify-start ${bgColor}`}>
       <p className="font-medium text-[3rem]">{title}</p>
@@ -24,7 +25,7 @@ function AboutUs() {
     <div className="grid gap-16">
       <div className="grid gap-16 text-justify">
         <p
-          className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto"
+          className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto capitalize"
           style={{
             lineHeight: '5rem',
           }}
@@ -59,7 +60,9 @@ function AboutUs() {
           style={{
             gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
           }}
-        ></div>
+        >
+          <Card title={'The laws'} description={''} Icon={''} bgColor={''} />
+        </div>
       </div>
     </div>
   );

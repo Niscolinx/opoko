@@ -25,7 +25,7 @@ const Header = () => {
               </Fragment>
             );
           })}
-        </>
+        </div>
       </div>
     </div>
   );

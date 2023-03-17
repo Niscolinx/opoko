@@ -12,7 +12,7 @@ const Header = () => {
   return (
       <div className="flex items-center justify-between">
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
-      <div className="flex gap-8">
+      <div className="flex justify-between">
         {path.map((item) => {
         console.log(location.pathname, item);
           return (

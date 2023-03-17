@@ -11,11 +11,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Layout from '../container/Layout';
 import AboutUs from '../pages/AboutUs';
+import Home from '../pages/Home';
+import Pricing from '../pages/Pricing';
 
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<Layout />}>
+      <Route path="home" element={<Home />} />,
       <Route path="about-us" element={<AboutUs />} />,
+      <Route path="pricing" element={<Pricing />} />,
     </Route>,
     <Route path="*" element={<Navigate to="/" />} />,
   ])

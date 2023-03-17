@@ -3,12 +3,12 @@ import React from 'react';
 interface Card {
   title: string
   description: string
-  icon: string
+  iconUrl: string
 }
-const Card = () => {
+const Card = ({title, description, iconUrl}:Card) => {
   return (
     <div>
-
+      <p className='font-medium text-[3rem]'></p>
     </div>
   )
 }

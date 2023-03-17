@@ -20,13 +20,11 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
 
-
   return (
     <div className="grid items-center grid-cols-3">
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
       <div className="flex justify-between">
-        {path.map((item, i) => {
-          console.log('location item', location.pathname, item);
+        {path.map((item) => {
           return (
             <Link key={item.name} to={item.path}>
               <div

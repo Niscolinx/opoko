@@ -9,12 +9,12 @@ import {
 import 'animate.css/animate.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Layout from '../pages/Layout';
+import Layout from '../container/Layout';
 import AboutUs from '../pages/AboutUs';
 
 const router = createBrowserRouter(
   createRoutesFromElements([
-    <Route path='/' element={<Layout />}>
+    <Route path="/" element={<Layout />}>
       <Route path="about-us" element={<AboutUs />} />,
     </Route>,
     <Route path="*" element={<Navigate to="/" />} />,

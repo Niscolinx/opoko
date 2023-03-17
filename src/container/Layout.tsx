@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Header from '../components/Header';
-import Auth from '../container/Auth';
+import Auth from './Auth';
 
 function Layout() {
   return (

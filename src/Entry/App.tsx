@@ -21,7 +21,7 @@ const router = createBrowserRouter(
 
 const App = () => {
   return (
-    <div className="text-[1.6rem] bg-blue-600">
+    <div className="text-[1.6rem]">
       <RouterProvider router={router} />
     </div>
   );

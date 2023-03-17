@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { GoLaw } from 'react-icons/go';
-import {TfiReload} from 'react-icons/tfi'
+import { TfiReload } from 'react-icons/tfi';
+import { HiTrendingUp } from 'react-icons/hi';
 
 interface Card {
   title: string;
@@ -10,14 +11,15 @@ interface Card {
 }
 export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   return (
-    <div className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}>
+    <div
+      className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}
+    >
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem] ">{description}</p>
-      <p className='text-[3rem]'>{Icon}</p>
+      <p className="text-[3rem]">{Icon}</p>
     </div>
   );
 };
-
 
 function AboutUs() {
   return (
@@ -77,9 +79,9 @@ function AboutUs() {
             bgColor={'bg-[#319F5A]'}
           />
           <Card
-            title={'The laws'}
+            title={'Insights'}
             description={
-              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+              'A compendium of industry developments to keep the user abreast of changes in the specific industry globally, and weighing plausible national and regional effects on the industry. It is the cutting-edge service that seeks to bridge the gap between law and practice'
             }
             Icon={<GoLaw />}
             bgColor={'bg-[#FF7900]'}

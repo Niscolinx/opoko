@@ -9,9 +9,9 @@ interface Card {
 }
 export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   return (
-    <div className={`h-[40rem] grid gap-8 justify-start ${bgColor}`}>
+    <div className={`h-[40rem] grid gap-8 justify-start ${bgColor} text-white`}>
       <p className="font-medium text-[3rem]">{title}</p>
-      <p className="text-[1.4rem]">{description}</p>
+      <p className="text-[1.4rem] ">{description}</p>
       <p>{Icon}</p>
     </div>
   );
@@ -59,6 +59,38 @@ function AboutUs() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
           }}
         >
+          <Card
+            title={'The laws'}
+            description={
+              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+            }
+            Icon={<GoLaw />}
+            bgColor={'bg-[#203C82]'}
+          />
+          <Card
+            title={'The laws'}
+            description={
+              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+            }
+            Icon={<GoLaw />}
+            bgColor={'bg-[#203C82]'}
+          />
+          <Card
+            title={'The laws'}
+            description={
+              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+            }
+            Icon={<GoLaw />}
+            bgColor={'bg-[#203C82]'}
+          />
+          <Card
+            title={'The laws'}
+            description={
+              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+            }
+            Icon={<GoLaw />}
+            bgColor={'bg-[#203C82]'}
+          />
           <Card
             title={'The laws'}
             description={

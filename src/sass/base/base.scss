@@ -6,11 +6,10 @@
   box-sizing: inherit;
 }
 
-
 body {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.7;
+  font-family: 'Work Sans', sans-serif;
+  //line-height: 1.7;
   font-weight: 400;
 }
 
@@ -30,7 +29,6 @@ html {
   @include respond(big-desktop) {
     font-size: 75%; //1rem = 12, 12/16
   }
- 
 }
 ::selection {
   background-color: $color-primary;
@@ -47,10 +45,10 @@ input[type='number']::-webkit-outer-spin-button {
   appearance: none;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    appearance: none;
-    -webkit-appearance: none;
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .hide-date-icon::-moz-date-time-edit-text {

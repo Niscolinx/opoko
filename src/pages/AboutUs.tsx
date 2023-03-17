@@ -1,10 +1,14 @@
 import React from 'react';
 
-
+interface Card {
+  title: string
+  description: string
+  icon: string
+}
 const card = () => {
   return (
     <div>
-      
+
     </div>
   )
 }

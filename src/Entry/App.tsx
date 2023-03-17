@@ -14,8 +14,9 @@ import AboutUs from '../pages/AboutUs';
 
 const router = createBrowserRouter(
   createRoutesFromElements([
-    <Route path="/" element={<Home />} />,
-    <Route path="/about-us" element={<AboutUs />} />,
+    <Route path="/" element={<Home />}>
+      <Route path="/about-us" element={<AboutUs />} />,
+    </Route>,
     <Route path="*" element={<Navigate to="/" />} />,
   ])
 );

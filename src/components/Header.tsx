@@ -27,7 +27,7 @@ const Header = () => {
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
                 {item.replace(/[-]/g, ' ')}
-                { item === pathname && (
+                { `/${item}` === pathname && (
                   <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
                     &nbsp;
                   </span>

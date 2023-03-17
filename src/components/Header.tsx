@@ -16,11 +16,11 @@ const Header = () => {
         {path.map((item) => {
         console.log(location.pathname, item);
           return (
-            <Link key={item} to={`/${item}`}>
+            <Link key={item} to={item}>
               <div
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
-                {item.replace('-', ' ')}
+                {item.replace('[/-]', ' ')}
                 {item === pathname && (
                   <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
                     &nbsp;

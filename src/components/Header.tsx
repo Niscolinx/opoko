@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -8,6 +8,12 @@ const Header = () => {
   const { pathname } = location;
 
   console.log({ location });
+  
+  useEffect(() => {
+    if(pathname === '/'){
+
+    }
+  }, [pathname])
 
   return (
     <div className="grid items-center grid-cols-3">
@@ -21,7 +27,7 @@ const Header = () => {
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
                 {item.replace(/[-/]/g, ' ')}
-                {item === pathname && (
+                {pathname === '/' || item === pathname && (
                   <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
                     &nbsp;
                   </span>

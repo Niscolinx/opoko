@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const path = ['/home', '/about-us', '/pricing'] as const;
+  const path = ['home', 'about-us', 'pricing'] as const;
 
   const location = useLocation();
   const { pathname } = location;
@@ -26,7 +26,7 @@ const Header = () => {
               <div
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
-                {item.replace(/[-/]/g, ' ')}
+                {item.replace(/[-]/g, ' ')}
                 { item === pathname && (
                   <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
                     &nbsp;

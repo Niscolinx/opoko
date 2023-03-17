@@ -10,7 +10,6 @@ const Header = () => {
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
       <div className="flex gap-8">
         {path.map((item) => {
-          console.log({ item, pathToSwitch });
           return (
             <Link key={item} to={`/${item}`}>
               <div

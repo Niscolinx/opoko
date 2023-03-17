@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const path = ['home', 'about', 'pricing'] as const;
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="flex gap-8">
         {path.map((item) => {
           return (
-            <Fragment key={item}>
+            <Link key={item} to=''>
               <input
                 type="radio"
                 name="header"
@@ -23,7 +24,7 @@ const Header = () => {
                 {item}
                 <span className=''></span>
               </label>
-            </Fragment>
+            </Link>
           );
         })}
       </div>

@@ -1,19 +1,17 @@
 import { Fragment, useContext, useEffect } from 'react';
 
 export const FirstSignUpStep = () => {
-
   //const redirectToLogin = () => dispatch(open('login'));
 
   //const { setStep } = AuthContextData;
-
-
 
   return (
     <div className="firstStep">
       <h1 className="heading1">Join Swifth</h1>
       <Fragment>
         <section className="container__box">
-          <button className="box__btn" onClick={() => setStep(1)}>
+          {/* <button className="box__btn" onClick={() => setStep(1)}> */}
+          <button className="box__btn">
             <img src="/icons/email.svg" alt="emailIcon" />
             Continue with Email
           </button>
@@ -28,7 +26,7 @@ export const FirstSignUpStep = () => {
         </section>
 
         <p className="authText">
-          I have an account? <button onClick={redirectToLogin}> Log In</button>
+          {/* I have an account? <button onClick={redirectToLogin}> Log In</button> */}
         </p>
       </Fragment>
       <p className="authFooter">
@@ -41,19 +39,13 @@ export const FirstSignUpStep = () => {
 };
 
 export const FirstLoginStep = () => {
-  const AuthContextData = useContext(AuthContext);
-  const dispatch = useAppDispatch();
-
-  const { setStep } = AuthContextData;
-
-  const redirectToRegister = () => dispatch(open('signup'));
-
   return (
     <div className="firstStep">
       <h1 className="heading1">Welcome Back!</h1>
       <Fragment>
         <section className="container__box">
-          <button className="box__btn" onClick={() => setStep(1)}>
+          {/* <button className="box__btn" onClick={() => setStep(1)}> */}
+          <button className="box__btn">
             <img src="/icons/email.svg" alt="emailIcon" />
             Continue with Email
           </button>
@@ -69,8 +61,9 @@ export const FirstLoginStep = () => {
       </Fragment>
       <p className="authText">
         Don't have an account?{' '}
-        <button onClick={redirectToRegister}> Create an account</button>
+        {/* <button onClick={redirectToRegister}> Create an account</button> */}
       </p>
     </div>
   );
 };
+

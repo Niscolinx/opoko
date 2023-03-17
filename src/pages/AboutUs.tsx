@@ -8,7 +8,7 @@ interface Card {
 }
 const Card = ({title, description, Icon, bgColor}:Card) => {
   return (
-    <div className='h-[40rem] grid gap-8 justify-start'>
+    <div className={`h-[40rem] grid gap-8 justify-start ${bgColor}`}>
       <p className='font-medium text-[3rem]'>{title}</p>
       <p className='text-[1.4rem]'>{description}</p>
       <p>{<Icon/>}</p>

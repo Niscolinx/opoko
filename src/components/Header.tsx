@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const path = ['home', 'about-us', 'pricing'] as const;
+  const path = ['/home', '/about-us', '/pricing'] as const;
 
   const location = useLocation();
   const { pathname } = location;

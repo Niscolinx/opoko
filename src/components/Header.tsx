@@ -10,7 +10,9 @@ const Header = () => {
   console.log({location})
   
   return (
-      <div className="flex items-center justify-between">
+      <div className="grid items-center grid-cols-3" style={{
+        gridTemplateColumns: '1fr 1fr 1fr'
+      }}>
       <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
       <div className="flex justify-between">
         {path.map((item) => {

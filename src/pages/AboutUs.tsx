@@ -4,10 +4,11 @@ interface Card {
   title: string
   description: string
   Icon: string
+  bgColor: string
 }
-const Card = ({title, description, Icon}:Card) => {
+const Card = ({title, description, Icon, bgColor}:Card) => {
   return (
-    <div>
+    <div className='h-[40rem]'>
       <p className='font-medium text-[3rem]'>{title}</p>
       <p className='text-[1.4rem]'>{description}</p>
       <p>{<Icon/>}</p>

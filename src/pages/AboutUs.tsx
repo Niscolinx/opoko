@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { GoLaw } from 'react-icons/go';
 
 interface Card {
   title: string;
   description: string;
-  Icon: any;
+  Icon: ReactNode;
   bgColor: string;
 }
 export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
@@ -17,8 +17,6 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   );
 };
 
-Card.description =
-  'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times ';
 
 function AboutUs() {
   return (
@@ -63,8 +61,10 @@ function AboutUs() {
         >
           <Card
             title={'The laws'}
-            description={''}
-            Icon={<GoLaw/>}
+            description={
+              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+            }
+            Icon={<GoLaw />}
             bgColor={'bg-[#203C82]'}
           />
         </div>

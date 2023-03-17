@@ -1,11 +1,11 @@
 import { Fragment, useState } from 'react';
 
 const Header = () => {
-  const path = ['Home', 'About Us', 'Pricing'] as const;
-  const [pathToSwitch, setPathToSwitch] = useState('');
+  const path = ['home', 'about', 'pricing'] as const;
+  const [pathToSwitch, setPathToSwitch] = useState('home');
 
   return (
-    <div>
+    <div className='estateDetails'>
       <div className="radioBox">
         <div>
           {path.map((item) => {
@@ -13,7 +13,7 @@ const Header = () => {
               <Fragment key={item}>
                 <input
                   type="radio"
-                  name="history"
+                  name="header"
                   id={item}
                   checked={item === pathToSwitch}
                   className="hidden"

@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { GoLaw } from 'react-icons/go';
+import {TfiReload} from 'react-icons/tfi'
 
 interface Card {
   title: string;
@@ -68,12 +69,12 @@ function AboutUs() {
             bgColor={'bg-[#203C82]'}
           />
           <Card
-            title={'The laws'}
+            title={'Precedents'}
             description={
-              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+              'As pronouncements are made in Courts of record, this segment is updated to promptly offer users the Court’s interpretation of the law and interplay of certain facts existing legal principles. It also contains forms and template documents.'
             }
-            Icon={<GoLaw />}
-            bgColor={'bg-[#203C82]'}
+            Icon={<TfiReload />}
+            bgColor={'bg-[#319F5A]'}
           />
           <Card
             title={'The laws'}
@@ -81,15 +82,7 @@ function AboutUs() {
               'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
             }
             Icon={<GoLaw />}
-            bgColor={'bg-[#203C82]'}
-          />
-          <Card
-            title={'The laws'}
-            description={
-              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
-            }
-            Icon={<GoLaw />}
-            bgColor={'bg-[#203C82]'}
+            bgColor={'bg-[#FF7900]'}
           />
           <Card
             title={'The laws'}

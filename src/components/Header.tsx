@@ -27,7 +27,7 @@ const Header = () => {
           );
         })}
       </div>
-      <button className='btn bg-gray-300 '>Login</button>
+      <button className='bg-gray-300 rounded-2xl px-16 py-4'>Login</button>
     </div>
   );
 };

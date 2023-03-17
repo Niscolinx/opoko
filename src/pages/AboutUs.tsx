@@ -9,10 +9,10 @@ interface Card {
 }
 export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   return (
-    <div className={`h-[40rem] grid gap-8 justify-start ${bgColor} text-white`}>
+    <div className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}>
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem] ">{description}</p>
-      <p>{Icon}</p>
+      <p className='text-[3rem]'>{Icon}</p>
     </div>
   );
 };
@@ -56,7 +56,7 @@ function AboutUs() {
         <div
           className="grid gap-8"
           style={{
-            gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(25rem, 1fr))',
           }}
         >
           <Card

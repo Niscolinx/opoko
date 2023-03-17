@@ -83,16 +83,16 @@ function AboutUs() {
             description={
               'A compendium of industry developments to keep the user abreast of changes in the specific industry globally, and weighing plausible national and regional effects on the industry. It is the cutting-edge service that seeks to bridge the gap between law and practice'
             }
-            Icon={<GoLaw />}
+            Icon={<HiTrendingUp />}
             bgColor={'bg-[#FF7900]'}
           />
           <Card
-            title={'The laws'}
+            title={'Case Review'}
             description={
-              'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
+              'A pre-set body of questions designed to generate a report on answers given. This section grants the user an immediate opinion'
             }
             Icon={<GoLaw />}
-            bgColor={'bg-[#203C82]'}
+            bgColor={'bg-[#464545]'}
           />
         </div>
       </div>

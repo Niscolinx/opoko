@@ -1,10 +1,13 @@
 import { useAppDispatch } from '../store/app/hooks';
-import { open } from '../store/features/modal';
 
 const Hero = () => {
   const dispatch = useAppDispatch();
 
-  const openModal = () => dispatch(open('signup'));
+  // const openModal = () => dispatch(open('signup'));
+
+  const openModal = () => {
+    
+  }
 
   return (
     <div className={`hero`}>

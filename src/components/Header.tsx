@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex gap-8">
         {path.map((item) => {
           return (
-            <Link key={item} to=''>
+            <Link key={item} to='/about-us' >
               <input
                 type="radio"
                 name="header"
@@ -20,7 +20,7 @@ const Header = () => {
                 className="hidden"
                 onChange={() => setPathToSwitch(item)}
               />
-              <label htmlFor={item} className={`capitalize`}>
+              <label htmlFor={item} className={`capitalize  cursor-pointer`}>
                 {item}
                 <span className=''></span>
               </label>

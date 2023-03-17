@@ -7,13 +7,11 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  console.log({ location });
-  
-  useEffect(() => {
-    if(pathname === '/'){
 
+  useEffect(() => {
+    if (pathname === '/') {
     }
-  }, [pathname])
+  }, [pathname]);
 
   return (
     <div className="grid items-center grid-cols-3">
@@ -27,7 +25,7 @@ const Header = () => {
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
                 {item.replace(/[-]/g, ' ')}
-                { `/${item}` === pathname &&  (
+                {`/${item}` === pathname && (
                   <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
                     &nbsp;
                   </span>
@@ -37,7 +35,7 @@ const Header = () => {
           );
         })}
       </div>
-      <div className='flex justify-end'>
+      <div className="flex justify-end">
         <button className="bg-gray-300 rounded-2xl px-16 py-4">Login</button>
       </div>
     </div>

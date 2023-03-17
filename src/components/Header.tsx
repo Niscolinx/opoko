@@ -2,7 +2,20 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const path = ['home', 'about-us', 'pricing'] as const;
+  const path: Record<'name' | 'path', string>[] = [
+    {
+      name: 'home',
+      path: '/',
+    },
+    {
+      name: 'about us',
+      path: '/about-us',
+    },
+    {
+      name: 'pricing',
+      path: '/pricing',
+    },
+  ];
 
   const location = useLocation();
   const { pathname } = location;
@@ -20,17 +33,16 @@ const Header = () => {
         {path.map((item, i) => {
           console.log('location item', location.pathname, item);
           return (
-            <Link key={item} to={item}>
+            <Link key={item.name} to={item.path}>
               <div
                 className={`capitalize  cursor-pointer grid gap-2 justify-items-center`}
               >
-                {item.replace(/[-]/g, ' ')}
-                {(pathname === '/' && item === 'home') ||
-                  (`/${item}` === pathname && (
-                    <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
-                      &nbsp;
-                    </span>
-                  ))}
+                {item.name}
+                {item.path === pathname && (
+                  <span className="bg-color-orange w-[1rem] h-[1rem] rounded-full">
+                    &nbsp;
+                  </span>
+                )}
               </div>
             </Link>
           );

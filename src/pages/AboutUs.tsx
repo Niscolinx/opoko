@@ -1,5 +1,14 @@
 import React from 'react';
 
+
+const card = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
 function AboutUs() {
   return (
     <div className="grid gap-16">

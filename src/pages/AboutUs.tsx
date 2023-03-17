@@ -8,10 +8,14 @@ interface Card {
 const Card = ({title, description, iconUrl}:Card) => {
   return (
     <div>
-      <p className='font-medium text-[3rem]'></p>
+      <p className='font-medium text-[3rem]'>{title}</p>
+      <p className='text-[1.4rem]'>{description}</p>
     </div>
   )
 }
+
+Card.description =
+  'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times ';
 
 
 function AboutUs() {

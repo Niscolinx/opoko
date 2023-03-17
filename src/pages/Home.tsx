@@ -5,10 +5,10 @@ function Home() {
     <div className="grid grid-cols-2 items-center">
       <div className="grid gap-8 max-w-[50rem]">
         <p className="text-[5rem] font-medium  ">
-          Get access to <span className="text-color-orange capitalize">The Law</span> in
+          Get access to <span className="text-color-orange capitalize font-bold">The Law</span> in
           just a few clicks
         </p>
-        <p>
+        <p className='w-[2.2rem]'>
           Opoko is a legal technology solution that offers insight into specific
           areas of law in triples.
         </p>

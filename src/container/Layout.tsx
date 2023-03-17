@@ -4,7 +4,7 @@ import Auth from './Auth';
 
 function Layout() {
   return (
-    <div className="px-16">
+    <div className="px-[10rem]">
       <Header />
 
       <div>

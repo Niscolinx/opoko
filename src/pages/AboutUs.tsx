@@ -24,7 +24,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
 
 function AboutUs() {
   return (
-    <div className="grid gap-16">
+    <div className="grid gap-[10rem]">
       <section className="grid gap-16 text-justify">
         <p
           className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto capitalize"

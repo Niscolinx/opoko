@@ -121,7 +121,7 @@ export const SecondSignUpStep = () => {
 
   return (
     <div className="grid gap-10 mt-16 justify-center pb-5">
-      <h1 className="heading1 text-center">Join Swifth</h1>
+      <h1 className="heading1 text-center">Join Opoko</h1>
       <p>Enter your required details to get started</p>
       <form
         className="form"

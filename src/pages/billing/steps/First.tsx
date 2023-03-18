@@ -26,7 +26,7 @@ function First() {
               Privacy Policy for details or to opt-out at any time.
             </p>
 
-            <div className="flex items-center gap-4 cursor-pointer">
+            <div className="flex items-center gap-4">
               <input type="checkbox" id="confirm" />
               <label htmlFor="confirm" className='cursor-pointer'>Please don't contact me via email</label>
             </div>

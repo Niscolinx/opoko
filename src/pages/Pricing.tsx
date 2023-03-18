@@ -12,7 +12,7 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
     <div
       className={`w-[35rem] grid gap-8 justify-start  text-black bg-white pt-[4rem] $`}
     >
-      <div className="px-8">
+      <div className="px-8 grid gap-8 justify-items-center">
         <p className="font-medium text-[3rem] capitalize">{title}</p>
         <p className="font-bold text-[5rem]">${amount.toLocaleString()}</p>
         <p className="text-[1.4rem] ">{description}</p>
@@ -38,7 +38,7 @@ const plans: Plan[] = ['annually', 'monthly'];
 function Pricing() {
   const [currentPlan, setCurrentPlan] = useState<Plan>('annually');
   return (
-    <div className="grid gap-[10rem]">
+    <div className="grid">
       <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[60vh]  clipFull-blue py-8 blogBg">
         <div className="grid content-center justify-items-center gap-8 max-w-[60rem]">
           <p
@@ -78,7 +78,7 @@ function Pricing() {
         </div>
       </section>
       <section
-        className="grid gap-8 bg-[#F7F8FC] p-8"
+        className="grid gap-8 bg-[#F7F8FC] p-8 py-[10rem]"
         style={{
           boxShadow: `0 0 0 100vmax #F7F8FC`,
           clipPath: `inset(0 -100vmax)`,

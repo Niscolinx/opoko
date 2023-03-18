@@ -26,22 +26,22 @@ interface AuthContext {
 const AuthContext = createContext<AuthContext>(null as any);
 
 const useAuthContext = () => {
-  const context = useContext(AuthContext)
+  const context = useContext(AuthContext);
 
-  if(!context){
-    throw new Error('Auth Context must be used within the Auth Container')
+  if (!context) {
+    throw new Error('Auth Context must be used within the Auth Container');
   }
 
-  return context
-}
+  return context;
+};
 
 function Auth() {
   // const modalData = useAppSelector(modalSelector);
   // const AuthContextData = useContext(AuthContext);
   // const { step } = AuthContextData;
 
-  const [step, setStep] = useState(0)
-  
+  const [step, setStep] = useState(0);
+
   // const { path } = modalData;
 
   // const AuthSteps = () => {
@@ -62,7 +62,15 @@ function Auth() {
 
   // return <AuthSteps />;
 
-  return <></>;
+  return (
+    <AuthContext.Provider
+      value={{
+        step,
+        setStep,
+        path: 'signup',
+      }}
+    ></AuthContext.Provider>
+  );
 }
 
 export default Auth;

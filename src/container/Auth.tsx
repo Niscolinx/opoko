@@ -63,8 +63,8 @@ function Auth() {
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
     [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],
-    [2, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
-    [2, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
+    [3, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
+    [4, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
   ]);
 
   return (
@@ -75,7 +75,9 @@ function Auth() {
         path,
         setPath,
       }}
-    ></AuthContext.Provider>
+    >
+      
+    </AuthContext.Provider>
   );
 }
 

@@ -3,6 +3,7 @@ import React, {
   Dispatch,
   SetStateAction,
   useContext,
+  useRef,
   useState,
 } from 'react';
 import {
@@ -40,6 +41,20 @@ function Auth() {
   const [step, setStep] = useState(0);
   const [path, setPath] = useState<Path>('signup');
 
+  const dialogRef = useRef<HTMLDialogElement | null>(null);
+
+  const closeDialog = () => {
+    if (dialogRef.current) {
+      dialogRef.current.close();
+    }
+  };
+
+  const openDialog = () => {
+    if (dialogRef.current) {
+      dialogRef.current.showModal();
+    }
+  };
+
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
     [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],
@@ -59,8 +74,7 @@ function Auth() {
       <dialog className="dialog" ref={dialogRef}>
         <section className="grid place-content-center w-full h-[100vh]">
           <div className="bg-white rounded-2xl grid place-content-center justify-items-center w-[64rem] h-[30rem] gap-8 text-[1.6rem]">
-
-      {renderAuthPath.get(step)}
+            {renderAuthPath.get(step)}
           </div>
         </section>
       </dialog>

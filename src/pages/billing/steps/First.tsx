@@ -13,10 +13,10 @@ function First() {
           </p>
         </div>
         <form>
-          <div>
+          <div className='max-w-[60rem] grid gap-4'>
             <input
               type="email"
-              className="py-4 px-4 border rounded-lg"
+              className="py-4 px-4 border rounded-lg w-[40rem]"
               placeholder="Email Address"
             />
 
@@ -31,7 +31,7 @@ function First() {
               <label htmlFor="confirm">Please don't contact me via email</label>
             </div>
           </div>
-          <button className="px-16 py-4 rounded-2xl bg-color-blue text-white text-center disabled:opacity-50 disabled:cursor-not-allowed">
+          <button className="px-16 py-4 rounded-2xl bg-color-blue text-white text-center disabled:opacity-50 disabled:cursor-not-allowed mt-[5rem]">
             Continue
           </button>
         </form>

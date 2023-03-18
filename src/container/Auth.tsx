@@ -76,7 +76,7 @@ function Auth() {
         setPath,
       }}
     >
-      
+      {renderAuthPath.get(step)}
     </AuthContext.Provider>
   );
 }

@@ -24,6 +24,10 @@ interface AuthContext {
 }
 const AuthContext = createContext<AuthContext>(null as any);
 
+const useAuthContext = () => {
+  const context = useContext(AuthContext)
+}
+
 function Auth() {
   // const modalData = useAppSelector(modalSelector);
   // const AuthContextData = useContext(AuthContext);

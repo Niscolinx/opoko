@@ -199,7 +199,8 @@ function AboutUs() {
         }}
       >
         <div className='text-[3rem]'>
-          <p className='text-white'></p>
+          <p className='text-white'>Have a specific question?</p>
+          <p className='text-gray-500'>Please send us a message</p>
         </div>
         <button className='px-16 py-4 rounded-2xl bg-color-blue text-white font-medium'>
           Ask a question

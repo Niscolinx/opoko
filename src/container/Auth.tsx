@@ -65,9 +65,13 @@ function Auth() {
         closeDialog();
       }
 
-      if (pathSignal.value) {
-        console.log('pathSignal value', pathSignal.value)
-        setPath(pathSignal.value);
+      console.log('pathSignal value', pathSignal.value)
+      if (pathSignal.value === 'login') {
+        setPath('login');
+        openDialog();
+      }
+      if (pathSignal.value === 'signup') {
+        setPath('signup');
         openDialog();
       }
     });

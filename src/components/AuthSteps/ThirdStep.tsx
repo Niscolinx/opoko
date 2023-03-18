@@ -69,7 +69,7 @@ function ThirdStep() {
           isInputNum
         />
         <button
-          className="bg-[#40AD6B] text-[1.6rem] py-6 disabled:opacity-50 btn1"
+          className="bg-color-blue text-[1.6rem] py-6 disabled:opacity-50 btn1"
           type="submit"
           disabled={isOtpLengthInValid}
         >

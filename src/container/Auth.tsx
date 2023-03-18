@@ -56,6 +56,7 @@ function Auth() {
 
   const openDialog = () => {
     if (dialogRef.current) {
+      setStep(1)
       dialogRef.current.showModal();
     }
   };

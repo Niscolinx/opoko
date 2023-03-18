@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { pathSignal, useAuthContext } from '../../container/Auth';
 
 export const FirstSignUpStep = () => {
-  //const redirectToLogin = () => dispatch(open('login'));
+  const redirectToLogin = () => pathSignal.value = 'signup';
 
   const { setStep } = useAuthContext();
 
@@ -26,7 +26,7 @@ export const FirstSignUpStep = () => {
         </section>
 
         <p className="authText">
-          {/* I have an account? <button onClick={redirectToLogin}> Log In</button> */}
+          I have an account? <button onClick={redirectToLogin}> Log In</button>
         </p>
       </Fragment>
       <p className="authFooter">

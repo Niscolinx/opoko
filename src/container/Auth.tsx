@@ -3,6 +3,7 @@ import React, {
   Dispatch,
   SetStateAction,
   useContext,
+  useState,
 } from 'react';
 import {
   FirstSignUpStep,
@@ -39,6 +40,8 @@ function Auth() {
   // const AuthContextData = useContext(AuthContext);
   // const { step } = AuthContextData;
 
+  const [step, setStep] = useState(0)
+  
   // const { path } = modalData;
 
   // const AuthSteps = () => {

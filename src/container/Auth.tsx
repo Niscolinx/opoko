@@ -42,7 +42,7 @@ const useAuthContext = () => {
 
 function Auth() {
   const [step, setStep] = useState(0);
-  const [path, setPath] = useState<Path>('signup');
+  
 
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 

@@ -198,7 +198,9 @@ function AboutUs() {
           background: `linear-gradient(90deg, rgba(18, 18, 154, 0.51) 0%, rgba(255, 197, 128, 0.51) 100%)`,
         }}
       >
-        <div></div>
+        <div className='text-[3rem]'>
+          <p className='text-white'></p>
+        </div>
         <button className='px-16 py-4 rounded-2xl bg-color-blue text-white font-medium'>
           Ask a question
         </button>

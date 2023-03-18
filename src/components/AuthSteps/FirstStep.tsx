@@ -10,7 +10,7 @@ export const FirstSignUpStep = () => {
 
   return (
     <div className="firstStep">
-      <h1 className="heading1">Join Swifth</h1>
+      <h1 className="heading1">Join Opoko</h1>
       <Fragment>
         <section className="container__box">
           <button className="box__btn" onClick={() => setStep(2)}>

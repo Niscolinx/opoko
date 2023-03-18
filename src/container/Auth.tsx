@@ -20,7 +20,7 @@ import { signal, effect } from '@preact/signals-react';
 
 type Path = 'signup' | 'login';
 
-export const pathSignal = signal<Path>('signup');
+export const pathSignal = signal<Path | undefined>(undefined);
 
 interface AuthContext {
   step: number;

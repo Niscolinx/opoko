@@ -3,7 +3,9 @@ import { GoLaw } from 'react-icons/go';
 import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
-import { BsRecordCircle, BsCircle, BsTelegram } from 'react-icons/bs';
+import { BsRecordCircle, BsCircle } from 'react-icons/bs';
+import { FaTelegramPlane } from 'react-icons/fa';
+
 import {
   FiChevronRight,
   FiFacebook,
@@ -224,7 +226,7 @@ function AboutUs() {
         </button>
       </section>
 
-      <footer className="flex items-center justify-between bg-black text-white p-16 clipFull">
+      <footer className="flex items-center justify-between bg-black text-white px-16 py-[8rem] clipFull">
         <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
           {FOOTERLINKS.map((item, i) => (
@@ -239,7 +241,7 @@ function AboutUs() {
             <FiTwitter className="text-white" />
           </a>
           <a href="/" target="_blank" rel="noopener noreferrer">
-            <BsTelegram className="text-white" />
+            <FaTelegramPlane className="text-white" />
           </a>
           <a href="/" target="_blank" rel="noopener noreferrer">
             <FiInstagram className="text-white" />

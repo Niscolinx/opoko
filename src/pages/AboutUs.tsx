@@ -208,7 +208,15 @@ function AboutUs() {
       </section>
 
       <footer className='flex items-center justify-between bg-black text-white px-16 py-4'>
+        <img src="/asset/logo-white.svg" alt="" />
+        <div>
 
+        </div>
+        <div>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <img src="" alt="" />
+          </a>
+        </div>
       </footer>
     </div>
   );

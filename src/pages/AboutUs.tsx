@@ -4,7 +4,12 @@ import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
 import { BsRecordCircle, BsCircle, BsTelegram } from 'react-icons/bs';
-import { FiChevronRight, FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
+import {
+  FiChevronRight,
+  FiFacebook,
+  FiInstagram,
+  FiTwitter,
+} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 interface Card {
@@ -28,7 +33,14 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   );
 };
 
-const FOOTERLINKS = ['About', 'Features', 'Pricing', 'Privacy Policy', 'Terms of Use', 'Legal']
+const FOOTERLINKS = [
+  'About',
+  'Features',
+  'Pricing',
+  'Privacy Policy',
+  'Terms of Use',
+  'Legal',
+];
 
 type Question = Record<'question' | 'answer', string>;
 const QUESTIONS: Question[] = [
@@ -214,16 +226,12 @@ function AboutUs() {
 
       <footer className="flex items-center justify-between bg-black text-white px-16 py-4">
         <img src="/asset/logo-white.svg" alt="" />
-        <div className='flex gap-4 items-center'>
-          {
-            FOOTERLINKS.map((item, i) => (
-              <Link to='/'>
-                
-              </Link>
-            ))
-          }
+        <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
+          {FOOTERLINKS.map((item, i) => (
+            <Link to="/">{item}</Link>
+          ))}
         </div>
-        <div className='flex items-center gap-4'>
+        <div className="flex items-center gap-4">
           <a href="/" target="_blank" rel="noopener noreferrer">
             <FiFacebook className="text-white" />
           </a>

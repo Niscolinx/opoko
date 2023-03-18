@@ -228,7 +228,7 @@ export const SecondLoginStep = () => {
     setTimeout(() => {
       navigate('/');
       pathSignal.value = undefined
-      // dispatch(close())
+      
     }, 500);
   };
 

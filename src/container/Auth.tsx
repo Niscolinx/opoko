@@ -67,6 +67,7 @@ function Auth() {
         console.log('useEffect close', isAuthOpen.value);
         closeDialog();
       }
+      
 
       if (pathSignal.value) {
         setPath(pathSignal.value);

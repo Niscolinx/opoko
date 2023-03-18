@@ -4,6 +4,7 @@ import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
 import { BsRecordCircle, BsCircle } from 'react-icons/bs';
+import { FiChevronRight } from 'react-icons/fi';
 
 interface Card {
   title: string;
@@ -22,7 +23,6 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem] ">{description}</p>
       <p className="text-[3rem] mt-auto">{Icon}</p>
-      
     </div>
   );
 };
@@ -136,15 +136,27 @@ function AboutUs() {
         <p className="text-[4rem]">Frequently Asked Questions</p>
 
         <div className="grid grid-cols-8">
-          <div className='' style={{
-            columns: '1 / 4'
-          }}>
+          <div
+            className=""
+            style={{
+              columns: '1 / 4',
+            }}
+          >
             {QUESTIONS.map((item, i) => (
               <div key={i}>
-                  <input type='radio' name='question' className='hidden' id={item.question + i} />
-                  <label htmlFor={item.question + i} className='flex items-center justify-between'>
-                    <p></p>
-                  </label>
+                <input
+                  type="radio"
+                  name="question"
+                  className="hidden"
+                  id={item.question + i}
+                />
+                <label
+                  htmlFor={item.question + i}
+                  className="flex items-center justify-between"
+                >
+                  <p></p>
+                  <span></span>
+                </label>
               </div>
             ))}
           </div>

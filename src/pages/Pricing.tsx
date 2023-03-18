@@ -44,9 +44,9 @@ function Pricing() {
           Our pricing and services are as transparent as possible.
         </p>
 
-        <div>
+        <div className="bg-[#020269] text-white rounded-3xl flex">
           {plans.map((item, i) => (
-            <div className="bg-[#020269] text-white rounded-3xl">
+            <>
               <input
                 type="radio"
                 name="plan"
@@ -63,7 +63,7 @@ function Pricing() {
               >
                 {item}
               </label>
-            </div>
+            </>
           ))}
         </div>
       </section>

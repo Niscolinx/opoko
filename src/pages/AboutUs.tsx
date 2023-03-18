@@ -21,9 +21,18 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem] ">{description}</p>
       <p className="text-[3rem] mt-auto">{Icon}</p>
+      
     </div>
   );
 };
+
+const QUESTIONS: Record<'question' | 'answer', string>[] = [
+  {
+    question: 'What is a Opoko?',
+    answer:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
+  },
+];
 
 function AboutUs() {
   return (

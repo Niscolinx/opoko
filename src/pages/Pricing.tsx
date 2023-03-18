@@ -28,7 +28,7 @@ function Pricing() {
   const [currentPlan, setCurrentPlan] = useState<Plan>('annually');
   return (
     <div className="grid gap-[10rem]">
-      <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[60vh]  clipFull-blue py-8 ">
+      <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[60vh]  clipFull-blue py-8 blogBg">
         <div className="grid content-center justify-items-center gap-8 max-w-[60rem]">
           <p
             className="text-[6rem] font-extrabold text-center"

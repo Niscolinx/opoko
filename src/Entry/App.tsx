@@ -12,6 +12,7 @@ import Layout from '../container/Layout';
 import AboutUs from '../pages/AboutUs';
 import Home from '../pages/Home';
 import Pricing from '../pages/Pricing';
+import Billing from '../pages/billing/Billing';
 
 const router = createBrowserRouter(
   createRoutesFromElements([
@@ -20,6 +21,8 @@ const router = createBrowserRouter(
       <Route path="about-us" element={<AboutUs />} />,
       <Route path="pricing" element={<Pricing />} />,
     </Route>,
+
+    <Route path="/billing" element={<Billing/>} />,
     <Route path="*" element={<Navigate to="/" />} />,
   ])
 );

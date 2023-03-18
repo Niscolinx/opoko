@@ -78,7 +78,7 @@ const QUESTIONS: Question[] = [
 function AboutUs() {
   const [question, setQuestion] = useState<Question>(QUESTIONS[0]);
   return (
-    <div className="grid gap-[10rem]">
+    <div className="grid gap-[10rem] mt-[5rem]">
       <section className="grid gap-16 text-justify">
         <p
           className="font-bold text-[5rem] text-color-blue text-center max-w-[50rem] mx-auto capitalize"
@@ -226,13 +226,18 @@ function AboutUs() {
         </button>
       </section>
 
-      <footer className="grid items-center justify-items-center bg-black text-white py-[8rem] clipFull" style={{
-        gridTemplateColumns: ' 1fr 4fr 1fr'
-      }}>
+      <footer
+        className="grid items-center justify-items-center bg-black text-white py-[8rem] clipFull"
+        style={{
+          gridTemplateColumns: ' 1fr 4fr 1fr',
+        }}
+      >
         <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-6 items-center border-b border-b-orange-600 pb-6 transition-all duration-75 delay-75">
           {FOOTERLINKS.map((item, i) => (
-            <Link to="/" className='hover:border rounded-lg p-4'>{item}</Link>
+            <Link to="/" className="hover:border rounded-lg p-4">
+              {item}
+            </Link>
           ))}
         </div>
         <div className="flex items-center gap-4 text-[2rem]">

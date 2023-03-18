@@ -7,7 +7,7 @@ function Layout() {
     <div className="px-[10rem]">
       <Header />
 
-      <div className='mt-[5rem]'>
+      <div className=''>
         <Outlet />
       </div>
       <Auth />

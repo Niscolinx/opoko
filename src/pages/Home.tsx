@@ -2,15 +2,21 @@ import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 function Home() {
   return (
-    <div className="grid grid-cols-2 items-center">
+    <div className="grid grid-cols-2 items-center mt-[5rem]">
       <div className="grid gap-8 max-w-[50rem]">
-        <p className="text-[5rem] font-medium " style={{
-            lineHeight: '5.6rem'
-        }}>
-          Get access to <span className="text-color-orange capitalize font-bold">The Law</span> in
-          just a few clicks
+        <p
+          className="text-[5rem] font-medium "
+          style={{
+            lineHeight: '5.6rem',
+          }}
+        >
+          Get access to{' '}
+          <span className="text-color-orange capitalize font-bold">
+            The Law
+          </span>{' '}
+          in just a few clicks
         </p>
-        <p className='text-[2.2rem]'>
+        <p className="text-[2.2rem]">
           Opoko is a legal technology solution that offers insight into specific
           areas of law in triples.
         </p>

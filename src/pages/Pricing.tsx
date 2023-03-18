@@ -2,9 +2,9 @@ import { ReactNode, useState } from 'react';
 
 interface Card {
   title: string;
+  amount: number;
   description: string;
-  Icon: ReactNode;
-  bgColor: string;
+  const: string[]
 }
 export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   return (
@@ -68,6 +68,9 @@ function Pricing() {
       </section>
       <section className='grid gap-8'>
         <p className='font-bold text-[3rem] text-center'>Choose a plan that suits you</p>
+        <div>
+
+        </div>
       </section>
     </div>
   );

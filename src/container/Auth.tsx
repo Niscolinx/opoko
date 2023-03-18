@@ -58,7 +58,6 @@ function Auth() {
   };
 
   useEffect(() => {
-    console.log('path signal', pathSignal.value);
     effect(() => {
       console.log('path signal', pathSignal.value);
       if (pathSignal.value) {

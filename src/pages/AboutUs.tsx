@@ -212,7 +212,7 @@ function AboutUs() {
       <footer className="flex items-center justify-between bg-black text-white px-16 py-4">
         <img src="/asset/logo-white.svg" alt="" />
         <div></div>
-        <div>
+        <div className='flex items-center gap-4'>
           <a href="/" target="_blank" rel="noopener noreferrer">
             <FiFacebook className="text-white" />
           </a>

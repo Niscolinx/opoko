@@ -226,8 +226,8 @@ function AboutUs() {
         </button>
       </section>
 
-      <footer className="grid items-center bg-black text-white py-[8rem] clipFull" style={{
-        gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))'
+      <footer className="grid items-center justify-items-center bg-black text-white py-[8rem] clipFull" style={{
+        gridTemplateColumns: ' 1fr 4fr 1fr'
       }}>
         <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">

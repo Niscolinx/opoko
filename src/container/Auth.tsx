@@ -22,6 +22,7 @@ import { signal, effect } from '@preact/signals-react';
 type Path = 'signup' | 'login';
 
 export const pathSignal = signal<Path | undefined>(undefined);
+export const isAuthOpen = signal(false)
 
 interface AuthContext {
   step: number;

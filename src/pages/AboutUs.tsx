@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { GoLaw } from 'react-icons/go';
 import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
-import {TbMessageDots} from 'react-icons/tb'
+import { TbMessageDots } from 'react-icons/tb';
 
 interface Card {
   title: string;
@@ -15,7 +15,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
     <div
       className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}
       style={{
-        background: `url(/asset/cardBg.svg) no-repeat ${bgColor}`
+        background: `url(/asset/cardBg.svg) no-repeat ${bgColor}`,
       }}
     >
       <p className="font-medium text-[3rem]">{title}</p>
@@ -103,13 +103,9 @@ function AboutUs() {
       <section className="grid gap-8">
         <p className="text-[4rem]">Frequently Asked Questions</p>
 
-        <div className='grid grid-cols-8'>
-          <div>
-            
-          </div>
-          <div>
-
-          </div>
+        <div className="grid grid-cols-8">
+          <div></div>
+          <div></div>
         </div>
       </section>
     </div>

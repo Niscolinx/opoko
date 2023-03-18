@@ -34,13 +34,13 @@ function First() {
               <label htmlFor="confirm" className='cursor-pointer'>Please don't contact me via email</label>
             </div>
           </div>
-          <button className="px-16 py-4 rounded-2xl bg-color-blue text-white text-center disabled:opacity-50 disabled:cursor-not-allowed mt-[5rem]">
+          <button className="px-16 py-4 rounded-2xl bg-color-blue text-white text-center disabled:opacity-50 disabled:cursor-not-allowed mt-[5rem]" disabled={email.length < 1}>
             Continue
           </button>
         </form>
       </section>
       <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8 h-[60vh]">
-        <div className="grid gap-4 justify-items-start w-full">
+        <div className="grid gap-8 justify-items-start w-full">
           <p className='font-medium text--[2rem]'>Summary</p>
           <div className='border-t border-b py-6 w-full'>
             <img src="/asset/logo.svg" alt="" />

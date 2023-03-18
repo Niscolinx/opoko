@@ -388,7 +388,7 @@ export const SecondLoginStep = () => {
       </form>
       <p className="authText mt-10">
         Don't have an account?{' '}
-        {/* <button onClick={redirectToRegister}> Create an account</button> */}
+        <button onClick={redirectToRegister}> Create an account</button>
       </p>
     </div>
   );

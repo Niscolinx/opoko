@@ -157,8 +157,10 @@ function AboutUs() {
                   htmlFor={item.question + i}
                   className="flex items-center justify-between"
                 >
-                  <p></p>
-                  <span></span>
+                  <p>
+                    
+                  </p>
+                  <span><FiChevronRight/></span>
                 </label>
               </div>
             ))}

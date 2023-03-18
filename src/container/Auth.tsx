@@ -89,7 +89,7 @@ function Auth() {
         <section className="grid place-content-center w-full h-[100vh]">
           <div className="bg-white rounded-2xl grid place-content-center justify-items-center w-[64rem] gap-8 relative">
             <button className="" onClick={closeDialog}>
-              <SlClose className="text-4xl " />
+              <SlClose className="text-5xl absolute right-0 top-0 m-6" />
             </button>
             {renderAuthPath.get(step)}
           </div>

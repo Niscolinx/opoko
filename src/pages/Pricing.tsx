@@ -83,7 +83,7 @@ function Pricing() {
 
         <div>
           {plans.map((item, i) => (
-            <div>
+            <div className="bg-[#020269] text-white rounded-3xl">
               <input
                 type="radio"
                 name="plan"
@@ -92,6 +92,10 @@ function Pricing() {
                 checked={item === currentPlan}
                 onChange={() => setCurrentPlan(item)}
               />
+              <label
+                htmlFor={item + i}
+                className={`${item === currentPlan ? '' : ''}`}
+              ></label>
             </div>
           ))}
         </div>

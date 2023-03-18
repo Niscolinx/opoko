@@ -4,15 +4,12 @@ interface Card {
   title: string;
   amount: number;
   description: string;
-  const: string[]
+  list: string[];
 }
-export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
+export const Card = ({ title, description, list, amount }: Required<Card>) => {
   return (
     <div
-      className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}
-      style={{
-        background: `url(/asset/cardBg.svg) no-repeat ${bgColor}`,
-      }}
+      className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] $`}
     >
       <p className="font-medium text-[3rem]">{title}</p>
       <p className="text-[1.4rem] ">{description}</p>
@@ -57,7 +54,7 @@ function Pricing() {
               <label
                 htmlFor={item + i}
                 className={` cursor-pointer py-4 px-8 w-[15rem] text-center rounded-[4rem] ${
-                  item === currentPlan && 'text-[#020269] bg-white ' 
+                  item === currentPlan && 'text-[#020269] bg-white '
                 }`}
               >
                 {item}
@@ -66,11 +63,11 @@ function Pricing() {
           ))}
         </div>
       </section>
-      <section className='grid gap-8'>
-        <p className='font-bold text-[3rem] text-center'>Choose a plan that suits you</p>
-        <div>
-
-        </div>
+      <section className="grid gap-8">
+        <p className="font-bold text-[3rem] text-center">
+          Choose a plan that suits you
+        </p>
+        <div></div>
       </section>
     </div>
   );

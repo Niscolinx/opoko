@@ -58,7 +58,7 @@ const QUESTIONS: Record<'question' | 'answer', string>[] = [
 ];
 
 function AboutUs() {
-  const [question, setQuestion] = useState('')
+  const [question, setQuestion] = useState('');
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 text-justify">
@@ -150,6 +150,8 @@ function AboutUs() {
                   name="question"
                   className="hidden"
                   id={item.question + i}
+                  checked={item.question === question}
+                  onChange={() => setQuestion(item.question)}
                 />
                 <label
                   htmlFor={item.question + i}

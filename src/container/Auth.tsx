@@ -51,7 +51,6 @@ function Auth() {
   };
 
   const openDialog = () => {
-    console.log('open Dialog', dialogRef.current);
     if (dialogRef.current) {
       dialogRef.current.showModal();
     }
@@ -66,6 +65,10 @@ function Auth() {
       }
     });
   }, []);
+
+  useEffect(() => {
+    console.log('the path UseEffect', {path})
+  }, [path])
 
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],

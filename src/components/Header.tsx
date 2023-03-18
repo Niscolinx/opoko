@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { pathSignal } from '../container/Auth';
 
 const Header = () => {
   const path: Record<'name' | 'path', string>[] = [
@@ -20,9 +21,12 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
 
+  const openLoginModal = () => {
+    pathSignal.value = 'login';
+  };
   return (
     <div className="grid items-center grid-cols-3 p-[2rem]">
-      <img src="/asset/logo.svg" alt=""  />
+      <img src="/asset/logo.svg" alt="" />
       <div className="flex justify-between">
         {path.map((item) => {
           return (
@@ -42,7 +46,12 @@ const Header = () => {
         })}
       </div>
       <div className="flex justify-end">
-        <button className="bg-gray-300 rounded-2xl px-16 py-4">Login</button>
+        <button
+          className="bg-gray-300 rounded-2xl px-16 py-4"
+          onClick={openLoginModal}
+        >
+          Login
+        </button>
       </div>
     </div>
   );

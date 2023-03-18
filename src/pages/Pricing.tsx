@@ -56,8 +56,8 @@ function Pricing() {
               />
               <label
                 htmlFor={item + i}
-                className={` py-4 px-8 w-[15rem] text-center rounded-[4rem] ${
-                  item === currentPlan ? 'text-[#020269] bg-white ' : ''
+                className={` cursor-pointer py-4 px-8 w-[15rem] text-center rounded-[4rem] ${
+                  item === currentPlan && 'text-[#020269] bg-white ' 
                 }`}
               >
                 {item}

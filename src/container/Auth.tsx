@@ -62,6 +62,7 @@ function Auth() {
     }
   });
 
+  console.log({path})
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
     [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],

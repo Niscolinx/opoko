@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 import { useNavigate } from 'react-router';
+import { pathSignal } from '../../container/Auth';
 
 function ThirdAuthStep() {
   const [password, setPassword] = useState('');
@@ -41,8 +42,10 @@ function ThirdAuthStep() {
 
     setLoading(true);
     setTimeout(() => {
-      navigate('/dashboard');
-    }, 1000);
+      pathSignal.value = undefined
+      navigate('/');
+
+    }, 500);
   };
 
   const toggleEyeIcon = () => setEyeIcon(!eyeIcon);
@@ -53,7 +56,7 @@ function ThirdAuthStep() {
   };
 
   return (
-    <div className="grid gap-10 mt-16 justify-center pb-5 self-center">
+    <div className="grid gap-10 justify-center py-[4rem] self-center">
       <h2 className="heading2 text-center">Create your password</h2>
 
       <form className="grid form w-[34rem]" onSubmit={handleSubmit}>

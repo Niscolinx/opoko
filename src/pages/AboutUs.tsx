@@ -138,7 +138,13 @@ function AboutUs() {
         <div className="grid grid-cols-8">
           <div className='' style={{
             columns: '1 / 4'
-          }}></div>
+          }}>
+            {QUESTIONS.map((item, i) => (
+              <div key={i}>
+                
+              </div>
+            ))}
+          </div>
           <div></div>
         </div>
       </section>

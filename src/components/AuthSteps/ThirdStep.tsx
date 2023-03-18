@@ -1,5 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import OtpInput from 'react-otp-input';
+import { Toast, ToastContainer} from 'react-toastify/dist/components';
 
 function ThirdStep() {
   type ValidationError = {
@@ -46,40 +47,43 @@ function ThirdStep() {
   };
 
   return (
-    <div className="grid gap-10 mt-16 justify-center pb-5">
-      <h2 className="heading2 text-center">We just sent your an email</h2>
+    <>
+    <ToastContainer/>
+      <div className="grid gap-10 mt-16 justify-center pb-5">
+        <h2 className="heading2 text-center">We just sent your an email</h2>
 
-      <form className="grid w-full form" onSubmit={handleSubmit}>
-        {' '}
-        {message && message.type === 'error' && (
-          <p className="text-red-500 text-sm font-semibold text-center py-4">
-            {message.message}
+        <form className="grid w-full form" onSubmit={handleSubmit}>
+          {' '}
+          {message && message.type === 'error' && (
+            <p className="text-red-500 text-sm font-semibold text-center py-4">
+              {message.message}
+            </p>
+          )}
+          <p className="text-center">
+            {/* Enter the email we sent to {userSelector.email} */}
           </p>
-        )}
-        <p className="text-center">
-          {/* Enter the email we sent to {userSelector.email} */}
+          <OtpInput
+            value={otp}
+            onChange={otpHandler}
+            numInputs={4}
+            inputStyle="pinlogin-field"
+            containerStyle="pinlogin"
+            shouldAutoFocus
+            isInputNum
+          />
+          <button
+            className="bg-color-blue text-[1.6rem] py-6 disabled:opacity-50 btn1"
+            type="submit"
+            disabled={isOtpLengthInValid}
+          >
+            {loading ? 'Loading...' : 'Continue'}
+          </button>
+        </form>
+        <p className="authText mt-10">
+          Didn't get a code? <button> Resend code</button>
         </p>
-        <OtpInput
-          value={otp}
-          onChange={otpHandler}
-          numInputs={4}
-          inputStyle="pinlogin-field"
-          containerStyle="pinlogin"
-          shouldAutoFocus
-          isInputNum
-        />
-        <button
-          className="bg-color-blue text-[1.6rem] py-6 disabled:opacity-50 btn1"
-          type="submit"
-          disabled={isOtpLengthInValid}
-        >
-          {loading ? 'Loading...' : 'Continue'}
-        </button>
-      </form>
-      <p className="authText mt-10">
-        Didn't get a code? <button> Resend code</button>
-      </p>
-    </div>
+      </div>
+    </>
   );
 }
 

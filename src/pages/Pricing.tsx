@@ -76,7 +76,7 @@ function Pricing() {
         </div>
       </section>
       <section
-        className="grid gap-8 bg-[#F7F8FC]"
+        className="grid gap-8 bg-[#F7F8FC] p-8"
         style={{
           boxShadow: `0 0 0 100vmax #F7F8FC`,
           clipPath: `inset(0 -100vmax)`,
@@ -85,7 +85,12 @@ function Pricing() {
         <p className="font-bold text-[3rem] text-center">
           Choose a plan that suits you
         </p>
-        <div>
+        <div
+          className="grid"
+          style={{
+            gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
+          }}
+        >
           <Card
             title={'Basic'}
             amount={350}

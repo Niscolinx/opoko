@@ -11,7 +11,7 @@ export const FirstSignUpStep = () => {
       <h1 className="heading1">Join Swifth</h1>
       <Fragment>
         <section className="container__box">
-          <button className="box__btn" onClick={() => setStep(1)}>
+          <button className="box__btn" onClick={() => setStep(2)}>
             <img src="/icons/email.svg" alt="emailIcon" />
             Continue with Email
           </button>
@@ -39,12 +39,14 @@ export const FirstSignUpStep = () => {
 };
 
 export const FirstLoginStep = () => {
+    const { setStep } = useAuthContext();
+
   return (
     <div className="firstStep">
       <h1 className="heading1">Welcome Back!</h1>
       <Fragment>
         <section className="container__box">
-          <button className="box__btn" onClick={() => setStep(1)}>
+          <button className="box__btn" onClick={() => setStep(2)}>
             <img src="/icons/email.svg" alt="emailIcon" />
             Continue with Email
           </button>

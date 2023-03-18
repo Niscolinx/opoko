@@ -232,7 +232,7 @@ function AboutUs() {
         <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-6 items-center border-b border-b-orange-600 pb-6">
           {FOOTERLINKS.map((item, i) => (
-            <Link to="/" className='hover:border hover:border-orange-600 p-4'>{item}</Link>
+            <Link to="/" className='hover:border hover:border-orange-600 py-4 w-[15rem]'>{item}</Link>
           ))}
         </div>
         <div className="flex items-center gap-4 text-[2rem]">

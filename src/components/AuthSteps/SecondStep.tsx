@@ -204,7 +204,6 @@ export const SecondLoginStep = () => {
      pathSignal.value = 'login';
    };
 
-   const { setStep } = useAuthContext();
 
   interface InputTypes {
     email: string;

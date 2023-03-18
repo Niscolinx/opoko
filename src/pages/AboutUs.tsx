@@ -137,11 +137,12 @@ function AboutUs() {
       <section className="grid gap-8">
         <p className="text-[4rem]">Frequently Asked Questions</p>
 
-        <div className="grid grid-cols-8">
+        <div className="grid grid-cols-8 relative">
           <div
             className=""
             style={{
               gridColumn: '1 / 5',
+              zIndex: 2
             }}
           >
             {QUESTIONS.map((item, i) => (
@@ -178,8 +179,9 @@ function AboutUs() {
             ))}
           </div>
           <div
-            className="grid gap-16 p-16"
+            className="grid gap-16 p-16 absolute bg-[#F2F5FF] rounded-2xl h-full "
             style={{
+              zIndex: 2,
               gridColumn: '4 / -1',
             }}
           >

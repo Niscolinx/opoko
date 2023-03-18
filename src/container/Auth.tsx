@@ -30,7 +30,7 @@ interface AuthContext {
 }
 const AuthContext = createContext<AuthContext>(null as any);
 
-const useAuthContext = () => {
+export const useAuthContext = () => {
   const context = useContext(AuthContext);
 
   if (!context) {

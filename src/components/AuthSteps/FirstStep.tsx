@@ -1,17 +1,17 @@
-import { Fragment, useContext, useEffect } from 'react';
+import { Fragment } from 'react';
+import { useAuthContext } from '../../container/Auth';
 
 export const FirstSignUpStep = () => {
   //const redirectToLogin = () => dispatch(open('login'));
 
-  //const { setStep } = AuthContextData;
+  const { setStep } = useAuthContext();
 
   return (
     <div className="firstStep">
       <h1 className="heading1">Join Swifth</h1>
       <Fragment>
         <section className="container__box">
-          {/* <button className="box__btn" onClick={() => setStep(1)}> */}
-          <button className="box__btn">
+          <button className="box__btn" onClick={() => setStep(1)}>
             <img src="/icons/email.svg" alt="emailIcon" />
             Continue with Email
           </button>

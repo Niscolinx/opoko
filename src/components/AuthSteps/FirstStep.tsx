@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { useAuthContext } from '../../container/Auth';
+import { pathSignal, useAuthContext } from '../../container/Auth';
 
 export const FirstSignUpStep = () => {
   //const redirectToLogin = () => dispatch(open('login'));
@@ -41,7 +41,9 @@ export const FirstSignUpStep = () => {
 export const FirstLoginStep = () => {
   const { setStep } = useAuthContext();
 
-  const redirectToRegister = () => {};
+  const redirectToRegister = () => {
+    pathSignal.value = 'signup'
+  };
 
   return (
     <div className="firstStep">

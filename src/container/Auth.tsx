@@ -15,8 +15,6 @@ import {
   SecondSignUpStep,
 } from '../components/AuthSteps/SecondStep';
 import ThirdStep from '../components/AuthSteps/ThirdStep';
-// import { AuthContext } from '../Context/AppContext';
-// import { modalSelector } from '../store/features/modal';
 
 type Path = 'signup' | 'login';
 
@@ -39,10 +37,6 @@ const useAuthContext = () => {
 };
 
 function Auth() {
-  // const modalData = useAppSelector(modalSelector);
-  // const AuthContextData = useContext(AuthContext);
-  // const { step } = AuthContextData;
-
   const [step, setStep] = useState(0);
   const [path, setPath] = useState<Path>('signup');
 
@@ -66,13 +60,17 @@ function Auth() {
 
   // return <AuthSteps />;
 
+  const renderAuthPath = new Map<number, JSX.Element>([
+    [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
+  ]);
+
   return (
     <AuthContext.Provider
       value={{
         step,
         setStep,
         path,
-        setPath
+        setPath,
       }}
     ></AuthContext.Provider>
   );

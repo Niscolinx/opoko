@@ -57,8 +57,12 @@ function Pricing() {
               />
               <label
                 htmlFor={item + i}
-                className={`${item === currentPlan ? '' : ''}`}
-              ></label>
+                className={` flex items-center ${
+                  item === currentPlan ? '' : ''
+                }`}
+              >
+                {item}
+              </label>
             </div>
           ))}
         </div>

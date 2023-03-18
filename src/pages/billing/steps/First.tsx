@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function First() {
   return (
@@ -9,8 +9,15 @@ function First() {
           We'll create an account if you're new, or ask you to sign in.
         </p>
       </div>
+      <div>
+        <input
+          type="email"
+          className="py-4 px-4 border"
+          placeholder="Email Address"
+        />
+      </div>
     </div>
   );
 }
 
-export default First
+export default First;

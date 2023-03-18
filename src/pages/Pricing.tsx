@@ -86,7 +86,18 @@ function Pricing() {
           Choose a plan that suits you
         </p>
         <div>
-          <Card title={'Basic'} amount={0} description={''} list={[]}/>
+          <Card
+            title={'Basic'}
+            amount={350}
+            description={
+              'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem'
+            }
+            list={[
+              'It is long established',
+              'It is long established',
+              'It is long established',
+            ]}
+          />
         </div>
       </section>
     </div>

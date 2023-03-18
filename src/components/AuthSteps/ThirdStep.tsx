@@ -41,7 +41,7 @@ function ThirdStep() {
 
     if (otp !== '4444') {
       //return notify('Wrong OTP code');
-      toast('Wrong OTP code', {
+      return toast('Wrong OTP code', {
         type: 'error',
       });
     }

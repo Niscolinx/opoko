@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BsRecordCircle, BsCircle } from 'react-icons/bs';
+import { BsRecordCircle } from 'react-icons/bs';
 
 
 interface Card {

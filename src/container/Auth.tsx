@@ -63,7 +63,7 @@ function Auth() {
 
   useEffect(() => {
     effect(() => {
-      if (isAuthOpen.value) {
+      if (!isAuthOpen.value) {
         console.log('useEffect close', isAuthOpen.value);
         closeDialog();
       }

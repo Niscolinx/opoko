@@ -85,7 +85,9 @@ function Pricing() {
         <p className="font-bold text-[3rem] text-center">
           Choose a plan that suits you
         </p>
-        <div></div>
+        <div>
+          <Card title={'Basic'} amount={0} description={''} list={[]}/>
+        </div>
       </section>
     </div>
   );

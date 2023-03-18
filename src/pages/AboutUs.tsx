@@ -206,6 +206,10 @@ function AboutUs() {
           Ask a question
         </button>
       </section>
+
+      <footer className='flex items-center justify-between bg-black text-white px-16 py-4'>
+
+      </footer>
     </div>
   );
 }

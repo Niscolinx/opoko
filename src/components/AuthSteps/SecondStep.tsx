@@ -228,7 +228,7 @@ export const SecondLoginStep = () => {
     setTimeout(() => {
       navigate('/dashboard');
       // dispatch(close())
-    }, 1000);
+    }, 500);
   };
 
   useEffect(() => {
@@ -301,7 +301,6 @@ export const SecondLoginStep = () => {
       return false;
     }
 
-    //dispatch(updateUser(inputField));
 
     handleSubmit();
   };

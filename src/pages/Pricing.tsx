@@ -44,7 +44,7 @@ function Pricing() {
           Our pricing and services are as transparent as possible.
         </p>
 
-        <div className="bg-[#020269] text-white rounded-3xl flex">
+        <div className="bg-[#020269] text-white rounded-3xl flex py-6 px-8">
           {plans.map((item, i) => (
             <>
               <input

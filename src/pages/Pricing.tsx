@@ -1,7 +1,5 @@
 import { ReactNode, useState } from 'react';
 
-
-
 interface Card {
   title: string;
   description: string;
@@ -63,7 +61,7 @@ const QUESTIONS: Question[] = [
   },
 ];
 
-const pricing = ['annually', 'monthly']
+const pricing = ['annually', 'monthly'];
 
 function Pricing() {
   return (
@@ -81,6 +79,11 @@ function Pricing() {
           Our pricing and services are as transparent as possible.
         </p>
 
+        <div>
+          {pricing.map((item, i) => (
+            <></>
+          ))}
+        </div>
       </section>
     </div>
   );

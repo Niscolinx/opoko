@@ -18,7 +18,7 @@ import {
 } from '../components/AuthSteps/SecondStep';
 import ThirdStep from '../components/AuthSteps/ThirdStep';
 import { signal, effect } from '@preact/signals-react';
-import { GrFormClose } from 'react-icons/gr';
+import { SlClose } from 'react-icons/sl';
 
 type Path = 'signup' | 'login';
 
@@ -88,8 +88,8 @@ function Auth() {
       <dialog className="dialog" ref={dialogRef}>
         <section className="grid place-content-center w-full h-[100vh]">
           <div className="bg-white rounded-2xl grid place-content-center justify-items-center w-[64rem] gap-8 relative">
-            <button className="authDialog__button" onClick={closeDialog}>
-              <GrFormClose className="text-3xl " />
+            <button className="" onClick={closeDialog}>
+              <SlClose className="text-4xl " />
             </button>
             {renderAuthPath.get(step)}
           </div>

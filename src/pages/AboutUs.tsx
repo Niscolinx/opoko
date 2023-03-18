@@ -157,7 +157,7 @@ function AboutUs() {
                   htmlFor={item.question + i}
                   className="flex items-center justify-between"
                 >
-                  <p>
+                  <p className='flex items-center gap-4'>
                     <span>
                       {item.question === question ? (
                         <BsRecordCircle />
@@ -165,6 +165,7 @@ function AboutUs() {
                         <BsCircle />
                       )}
                     </span>
+                    <span>{item.question}</span>
                   </p>
                   <span>
                     <FiChevronRight />

@@ -15,7 +15,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
     <div
       className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}
       style={{
-        background: `url(/asset/cardBg.svg) no-repeat`
+        background: `url(/asset/cardBg.svg) no-repeat ${bgColor}`
       }}
     >
       <p className="font-medium text-[3rem]">{title}</p>
@@ -72,7 +72,7 @@ function AboutUs() {
               'This segment collates the applicable law for the specialized area. It is promptly updated to highlight legal changes and provide relevant, current information at all times'
             }
             Icon={<GoLaw />}
-            bgColor={'bg-[#203C82]'}
+            bgColor={'#203C82'}
           />
           <Card
             title={'Precedents'}
@@ -80,7 +80,7 @@ function AboutUs() {
               'As pronouncements are made in Courts of record, this segment is updated to promptly offer users the Court’s interpretation of the law and interplay of certain facts existing legal principles. It also contains forms and template documents.'
             }
             Icon={<TfiReload />}
-            bgColor={'bg-[#319F5A]'}
+            bgColor={'#319F5A'}
           />
           <Card
             title={'Insights'}
@@ -88,7 +88,7 @@ function AboutUs() {
               'A compendium of industry developments to keep the user abreast of changes in the specific industry globally, and weighing plausible national and regional effects on the industry. It is the cutting-edge service that seeks to bridge the gap between law and practice'
             }
             Icon={<HiTrendingUp />}
-            bgColor={'bg-[#FF7900]'}
+            bgColor={'#FF7900'}
           />
           <Card
             title={'Case Review'}
@@ -96,7 +96,7 @@ function AboutUs() {
               'A pre-set body of questions designed to generate a report on answers given. This section grants the user an immediate opinion'
             }
             Icon={<TbMessageDots />}
-            bgColor={'bg-[#464545]'}
+            bgColor={'#464545'}
           />
         </div>
       </section>

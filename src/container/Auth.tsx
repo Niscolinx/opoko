@@ -20,11 +20,12 @@ import { signal  } from '@preact/signals-react';
 
 type Path = 'signup' | 'login';
 
+const path = signal<Path>('signup')
+
 interface AuthContext {
   step: number;
   setStep: Dispatch<SetStateAction<number>>;
-  path: Path;
-  setPath: Dispatch<SetStateAction<Path>>;
+
 }
 const AuthContext = createContext<AuthContext>(null as any);
 
@@ -68,9 +69,7 @@ function Auth() {
     <AuthContext.Provider
       value={{
         step,
-        setStep,
-        path,
-        setPath,
+        setStep
       }}
     >
       <dialog className="dialog" ref={dialogRef}>

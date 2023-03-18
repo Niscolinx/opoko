@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       <div className="flex justify-end">
         <button
-          className="bg-gray-300 rounded-2xl px-16 py-4"
+          className="bg-color-blue text-white rounded-2xl px-16 py-4"
           onClick={openLoginModal}
         >
           Login

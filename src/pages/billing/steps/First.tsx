@@ -2,7 +2,7 @@ import React from 'react';
 
 function First() {
   return (
-    <div className=''>
+    <div className="">
       <section className="grid gap-4">
         <div>
           <p className="font-medium text-[2.8rem]">Enter your email address</p>
@@ -34,8 +34,8 @@ function First() {
           </button>
         </form>
       </section>
-      <section>
-    
+      <section className="bg-[#F1F5FF]">
+        
       </section>
     </div>
   );

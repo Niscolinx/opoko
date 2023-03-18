@@ -18,10 +18,13 @@ import ThirdStep from '../components/AuthSteps/ThirdStep';
 // import { AuthContext } from '../Context/AppContext';
 // import { modalSelector } from '../store/features/modal';
 
+type Path = 'signup' | 'login';
+
 interface AuthContext {
   step: number;
   setStep: Dispatch<SetStateAction<number>>;
-  path: 'signup' | 'login';
+  path: Path;
+  setPath: Dispatch<SetStateAction<Path>>;
 }
 const AuthContext = createContext<AuthContext>(null as any);
 
@@ -41,6 +44,7 @@ function Auth() {
   // const { step } = AuthContextData;
 
   const [step, setStep] = useState(0);
+  const [path, setPath] = useState<Path>('signup');
 
   // const { path } = modalData;
 
@@ -67,7 +71,8 @@ function Auth() {
       value={{
         step,
         setStep,
-        path: 'signup',
+        path,
+        setPath
       }}
     ></AuthContext.Provider>
   );

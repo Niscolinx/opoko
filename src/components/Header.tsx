@@ -21,8 +21,8 @@ const Header = () => {
   const { pathname } = location;
 
   return (
-    <div className="grid items-center grid-cols-3">
-      <img src="/asset/logo.svg" alt="" className="w-[12rem]" />
+    <div className="grid items-center grid-cols-3 p-[2rem]">
+      <img src="/asset/logo.svg" alt=""  />
       <div className="flex justify-between">
         {path.map((item) => {
           return (

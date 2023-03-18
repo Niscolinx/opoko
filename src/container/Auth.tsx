@@ -58,6 +58,7 @@ function Auth() {
   effect(() => {
     console.log('path signal', pathSignal.value);
     if (pathSignal.value) {
+      setPath(pathSignal.value)
       openDialog();
     }
   });

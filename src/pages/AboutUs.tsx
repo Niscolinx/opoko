@@ -156,7 +156,7 @@ function AboutUs() {
                 />
                 <label
                   htmlFor={item.question + i}
-                  className="flex items-center justify-between"
+                  className="flex items-center justify-between py-6 gap-8"
                 >
                   <p className="flex items-center gap-4">
                     <span>

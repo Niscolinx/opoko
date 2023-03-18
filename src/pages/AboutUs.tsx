@@ -230,7 +230,7 @@ function AboutUs() {
         gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))'
       }}>
         <img src="/asset/logoWhite.svg" alt="" />
-        <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6 col-span-full">
+        <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
           {FOOTERLINKS.map((item, i) => (
             <Link to="/">{item}</Link>
           ))}

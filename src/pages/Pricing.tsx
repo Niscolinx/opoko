@@ -132,7 +132,7 @@ function Pricing() {
           />
         </div>
       </section>
-      <footer className="grid gap-4 bg-white py-[10rem]">
+      <footer className="grid gap-4 bg-white py-[10rem] justify-items-center">
         <p className="font-medium text-[3rem]">Not ready yet?</p>
         <p className="font-extrabold text-[4rem] text-color-blue">
           Use Opoko for free

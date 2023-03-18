@@ -27,6 +27,8 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   );
 };
 
+const FOOTERLINKS = ['About', 'Features', 'Pricing', 'Privacy Policy', 'Terms of Use', 'Legal']
+
 type Question = Record<'question' | 'answer', string>;
 const QUESTIONS: Question[] = [
   {

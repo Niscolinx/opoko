@@ -16,6 +16,7 @@ import {
   SecondSignUpStep,
 } from '../components/AuthSteps/SecondStep';
 import ThirdStep from '../components/AuthSteps/ThirdStep';
+import { signal  } from '@preact/signals-react';
 
 type Path = 'signup' | 'login';
 
@@ -36,6 +37,7 @@ const useAuthContext = () => {
 
   return context;
 };
+
 
 function Auth() {
   const [step, setStep] = useState(0);

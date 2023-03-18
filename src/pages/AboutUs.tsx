@@ -193,6 +193,7 @@ function AboutUs() {
         </div>
       </section>
       <section
+      className='flex justify-between p-16'
         style={{
           background: `linear-gradient(90deg, rgba(18, 18, 154, 0.51) 0%, rgba(255, 197, 128, 0.51) 100%)`,
         }}

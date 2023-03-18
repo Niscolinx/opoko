@@ -18,11 +18,12 @@ import {
 } from '../components/AuthSteps/SecondStep';
 import ThirdStep from '../components/AuthSteps/ThirdStep';
 import { signal, effect } from '@preact/signals-react';
+import { GrFormClose } from 'react-icons/gr';
 
 type Path = 'signup' | 'login';
 
 export const pathSignal = signal<Path | undefined>(undefined);
-export const isAuthOpen = signal(false)
+export const isAuthOpen = signal(false);
 
 interface AuthContext {
   step: number;
@@ -59,19 +60,16 @@ function Auth() {
 
   useEffect(() => {
     effect(() => {
-      if(isAuthOpen.value){
-        closeDialog()
+      if (isAuthOpen.value) {
+        closeDialog();
       }
 
       if (pathSignal.value) {
         setPath(pathSignal.value);
         openDialog();
       }
-
-    
     });
   }, []);
-
 
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
@@ -89,7 +87,10 @@ function Auth() {
     >
       <dialog className="dialog" ref={dialogRef}>
         <section className="grid place-content-center w-full h-[100vh]">
-          <div className="bg-white rounded-2xl grid place-content-center justify-items-center w-[64rem] gap-8">
+          <div className="bg-white rounded-2xl grid place-content-center justify-items-center w-[64rem] gap-8 relative">
+            <button className="authDialog__button" onClick={closeDialog}>
+              <GrFormClose className="text-3xl " />
+            </button>
             {renderAuthPath.get(step)}
           </div>
         </section>

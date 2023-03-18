@@ -116,3 +116,8 @@ p {
   }
 }
 
+.clipFull {
+  box-shadow: 0 0 0 100vmax black;
+  clip-path: inset(0 -100vmax);
+  padding: 4rem 0;
+}

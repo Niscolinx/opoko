@@ -50,6 +50,7 @@ function Auth() {
   };
 
   const openDialog = () => {
+    console.log('open Dialog', dialogRef.current)
     if (dialogRef.current) {
       dialogRef.current.showModal();
     }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BsRecordCircle } from 'react-icons/bs';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 interface Card {
   title: string;
@@ -131,9 +132,16 @@ function Pricing() {
           />
         </div>
       </section>
-      <footer className='grid gap-4 bg-white py-[10rem]'>
-            <p className='font-medium text-[3rem]'>Not ready yet?</p>
-            <p className='font-extrabold text-[4rem] text-color-blue'>Use Opoko for free</p>
+      <footer className="grid gap-4 bg-white py-[10rem]">
+        <p className="font-medium text-[3rem]">Not ready yet?</p>
+        <p className="font-extrabold text-[4rem] text-color-blue">
+          Use Opoko for free
+        </p>
+        <div className="flex justify-center">
+          <button className="bg-color-orange font-semibold text-white flex items-center gap-4 px-8 py-4 rounded-2xl text-[2.2rem] ">
+            Get Started <HiOutlineArrowNarrowRight />{' '}
+          </button>
+        </div>
       </footer>
     </div>
   );

@@ -47,6 +47,8 @@ function Auth() {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const closeDialog = () => {
+    pathSignal.value = undefined;
+
     if (dialogRef.current) {
       dialogRef.current.close();
     }
@@ -61,8 +63,7 @@ function Auth() {
   useEffect(() => {
     effect(() => {
       if (isAuthOpen.value) {
-        console.log('useEffect close', isAuthOpen.value)
-        pathSignal.value = undefined
+        console.log('useEffect close', isAuthOpen.value);
         closeDialog();
       }
 

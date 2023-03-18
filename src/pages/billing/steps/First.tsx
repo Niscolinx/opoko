@@ -2,11 +2,11 @@ import React from 'react';
 
 function First() {
   return (
-    <div className="grid gap-8" style={{
+    <div className="grid gap-8 " style={{
         gridTemplateColumns: '60% auto'
     }}>
-      <section className="grid gap-4">
-        <div>
+      <section>
+        <div className='mb-10'>
           <p className="font-medium text-[2.8rem]">Enter your email address</p>
           <p className="text-[#4A7AF7] font-bold">
             We'll create an account if you're new, or ask you to sign in.
@@ -36,7 +36,7 @@ function First() {
           </button>
         </form>
       </section>
-      <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8">
+      <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8 h-[60vh]">
         <div className="grid gap-4 justify-items-start w-full">
           <p className='font-medium text--[2rem]'>Summary</p>
           <div className='border-t border-b py-6 w-full'>

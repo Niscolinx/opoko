@@ -142,43 +142,42 @@ function AboutUs() {
             className="bg-white shadow"
             style={{
               gridColumn: '1 / 5',
-              zIndex: 2,
+              zIndex: 2
             }}
           >
-            <div>
-              {QUESTIONS.map((item, i) => (
-                <div key={i}>
-                  <input
-                    type="radio"
-                    name="question"
-                    className="hidden"
-                    id={item.question + i}
-                    checked={item.question === question.question}
-                    onChange={() => setQuestion(item)}
-                  />
-                  <label
-                    htmlFor={item.question + i}
-                    className={`flex items-center justify-between py-10 px-6 gap-16 ${
-                      item.question === question.question && 'bg-[#F2F5FF]'
-                    }`}
-                  >
-                    <p className="flex items-center gap-8">
-                      <span className="text-color-blue">
-                        {item.question === question.question ? (
-                          <BsRecordCircle />
-                        ) : (
-                          <BsCircle />
-                        )}
-                      </span>
-                      <span>{item.question}</span>
-                    </p>
-                    <span>
-                      <FiChevronRight />
+            
+            {QUESTIONS.map((item, i) => (
+              <div key={i}>
+                <input
+                  type="radio"
+                  name="question"
+                  className="hidden"
+                  id={item.question + i}
+                  checked={item.question === question.question}
+                  onChange={() => setQuestion(item)}
+                />
+                <label
+                  htmlFor={item.question + i}
+                  className={`flex items-center justify-between py-10 px-6 gap-16 ${
+                    item.question === question.question && 'bg-[#F2F5FF]'
+                  }`}
+                >
+                  <p className="flex items-center gap-8">
+                    <span className="text-color-blue">
+                      {item.question === question.question ? (
+                        <BsRecordCircle />
+                      ) : (
+                        <BsCircle />
+                      )}
                     </span>
-                  </label>
-                </div>
-              ))}
-            </div>
+                    <span>{item.question}</span>
+                  </p>
+                  <span>
+                    <FiChevronRight />
+                  </span>
+                </label>
+              </div>
+            ))}
           </div>
           <div
             className="grid gap-16 p-16 absolute bg-[#F2F5FF] rounded-2xl h-full "

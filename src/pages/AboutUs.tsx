@@ -226,7 +226,9 @@ function AboutUs() {
         </button>
       </section>
 
-      <footer className="flex items-center justify-between bg-black text-white px-16 py-[8rem] clipFull">
+      <footer className="grid items-center bg-black text-white px-16 py-[8rem] clipFull" style={{
+        gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))'
+      }}>
         <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
           {FOOTERLINKS.map((item, i) => (

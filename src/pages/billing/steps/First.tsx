@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function First() {
+    const [email, setEmail] = useState('')
   return (
     <div className="grid gap-8 " style={{
         gridTemplateColumns: '60% auto'
@@ -18,6 +19,8 @@ function First() {
               type="email"
               className="py-4 px-4 border rounded-lg w-[40rem]"
               placeholder="Email Address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
 
             <p className="font-bold">
@@ -27,7 +30,7 @@ function First() {
             </p>
 
             <div className="flex items-center gap-4">
-              <input type="checkbox" id="confirm" />
+              <input type="checkbox" id="confirm" className='cursor-pointer' />
               <label htmlFor="confirm" className='cursor-pointer'>Please don't contact me via email</label>
             </div>
           </div>

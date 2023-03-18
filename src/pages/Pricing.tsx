@@ -79,10 +79,17 @@ function Pricing() {
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 bg-color-blue text-white justify-items-center">
-        <p className='text-[6rem] font-extrabold' style={{
-          lineHeight: '5rem'
-        }}>Simple and affordable pricing</p>
-        <p>Our pricing and services are as transparent as possible.</p>
+        <p
+          className="text-[6rem] font-extrabold"
+          style={{
+            lineHeight: '5rem',
+          }}
+        >
+          Simple and affordable pricing
+        </p>
+        <p className="text-[#4CFF8F] font-semibold">
+          Our pricing and services are as transparent as possible.
+        </p>
       </section>
     </div>
   );

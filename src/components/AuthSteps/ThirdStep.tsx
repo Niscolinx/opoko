@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import OtpInput from 'react-otp-input';
-import { toast, ToastContainer} from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import { useAuthContext } from '../../container/Auth';
 
 function ThirdStep() {
   type ValidationError = {
@@ -8,8 +9,7 @@ function ThirdStep() {
     password: string;
   };
 
-
-
+  const { setStep } = useAuthContext();
 
   const [otp, setOtp] = useState<string>('');
   const [message, setMessage] = useState<{
@@ -44,15 +44,14 @@ function ThirdStep() {
       toast('Wrong OTP code', {
         type: 'error',
       });
-      
     }
 
-    //setStep(3);
+    setStep(4);
   };
 
   return (
     <>
-    <ToastContainer/>
+      <ToastContainer />
       <div className="grid gap-10 mt-16 justify-center pb-5">
         <h2 className="heading2 text-center">We just sent your an email</h2>
 

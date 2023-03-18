@@ -33,7 +33,7 @@ function Pricing() {
           <p
             className="text-[6rem] font-extrabold text-center"
             style={{
-              lineHeight: '5rem',
+              lineHeight: '7rem',
             }}
           >
             Simple and affordable pricing
@@ -43,7 +43,7 @@ function Pricing() {
           </p>
         </div>
 
-        <div className="bg-[#020269] text-white flex  justify-items-center rounded-[4rem] overflow-hidden self-end">
+        <div className="bg-[#020269] text-white flex  justify-items-center rounded-[4rem] overflow-hidden self-end capitalize font-semibold">
           {plans.map((item, i) => (
             <>
               <input

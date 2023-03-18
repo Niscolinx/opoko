@@ -6,7 +6,7 @@ function First() {
     <div
       className="grid gap-8 "
       style={{
-        gridTemplateColumns: '60% auto',
+        gridTemplateColumns: '70% auto',
       }}
     >
       <section>
@@ -47,10 +47,10 @@ function First() {
           </button>
         </form>
       </section>
-      <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8 h-[60vh]">
+      <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8 h-[80vh]">
         <div className="grid gap-8 justify-items-start w-full">
           <p className="font-medium text--[2rem]">Summary</p>
-          <div className="border-t  border-b py-6 w-full grid gap-8">
+          <div className="border-t border-b border-b-gray-500 border-t-gray-500 py-6 w-full grid gap-8">
             <img src="/asset/logo.svg" alt="" />
             <p className="capitalize text-color-blue">
               Subscription plan (basic)

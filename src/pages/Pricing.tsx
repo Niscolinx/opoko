@@ -10,23 +10,21 @@ interface Card {
 export const Card = ({ title, description, list, amount }: Required<Card>) => {
   return (
     <div
-      className={` grid gap-8 justify-start  text-black bg-white pt-[4rem] $`}
+      className={` w-max-[35rem] grid gap-8 justify-start  text-black bg-white pt-[4rem] $`}
     >
-      <div className='px-8'>
-
-
-      <p className="font-medium text-[3rem] capitalize">{title}</p>
-      <p className="font-bold text-[5rem]">${amount.toLocaleString()}</p>
-      <p className="text-[1.4rem] ">{description}</p>
-      <div className="grid gap-4 p-8">
-        {list.map((item, i) => (
-          <p className="flex items-center gap-4">
-            <BsRecordCircle />
-            {item}
-          </p>
-        ))}
-      </div>
+      <div className="px-8">
+        <p className="font-medium text-[3rem] capitalize">{title}</p>
+        <p className="font-bold text-[5rem]">${amount.toLocaleString()}</p>
+        <p className="text-[1.4rem] ">{description}</p>
+        <div className="grid gap-4 p-8">
+          {list.map((item, i) => (
+            <p className="flex items-center gap-4">
+              <BsRecordCircle />
+              {item}
+            </p>
+          ))}
         </div>
+      </div>
       <button className="bg-[#12129A] text-white py-6 px-8 text-center">
         Get started today
       </button>

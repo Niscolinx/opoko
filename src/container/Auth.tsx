@@ -2,6 +2,7 @@ import React, {
   createContext,
   Dispatch,
   SetStateAction,
+  useCallback,
   useContext,
   useRef,
   useState,
@@ -55,20 +56,26 @@ function Auth() {
     }
   };
 
-  effect(() => {
-    console.log('path signal', pathSignal.value);
-    if (pathSignal.value) {
-      openDialog();
-    }
-  });
+  
 
-  console.log({path})
-  const renderAuthPath = new Map<number, JSX.Element>([
-    [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
-    [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],
-    [3, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
-    [4, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
-  ]);
+  console.log({ path });
+  let value = undefined
+  const renderAuthPath = useCallback(() => {
+    effect(() => {
+      console.log('path signal', pathSignal.value);
+      if (pathSignal.value) {
+        value = pathSignal.value
+        openDialog();
+      }
+    });
+    console.log('callback path', path)
+    return new Map<number, JSX.Element>([
+      [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
+      [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],
+      [3, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
+      [4, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
+    ]);
+  }, [value]);
 
   return (
     <AuthContext.Provider
@@ -80,7 +87,7 @@ function Auth() {
       <dialog className="dialog" ref={dialogRef}>
         <section className="grid place-content-center w-full h-[100vh]">
           <div className="bg-white rounded-2xl grid place-content-center justify-items-center w-[64rem] h-[30rem] gap-8 text-[1.6rem]">
-            {renderAuthPath.get(step)}
+            {renderAuthPath().get(step)}
           </div>
         </section>
       </dialog>

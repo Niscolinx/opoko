@@ -186,8 +186,11 @@ function AboutUs() {
               gridColumn: '4 / -1',
             }}
           >
+            <div>
+
             <p className="font-medium">{question.question}</p>
             <p>{question.answer}</p>
+            </div>
           </div>
         </div>
       </section>

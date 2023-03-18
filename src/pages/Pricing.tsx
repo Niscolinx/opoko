@@ -131,6 +131,9 @@ function Pricing() {
           />
         </div>
       </section>
+      <footer className='grid gap-4 bg-white '>
+            
+      </footer>
     </div>
   );
 }

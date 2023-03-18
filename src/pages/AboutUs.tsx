@@ -32,6 +32,28 @@ const QUESTIONS: Record<'question' | 'answer', string>[] = [
     answer:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
   },
+  {
+    question:
+      'Do I need to pay to Opoko even when there is no transaction going on in my business?',
+    answer:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
+  },
+  {
+    question: 'What platforms does Opoko payment gateway support?',
+    answer:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
+  },
+  {
+    question: 'Does Opoko provide international payments support?',
+    answer:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
+  },
+  {
+    question:
+      'Is there any setup fee or annual maintainance fee that I need to pay regularly?',
+    answer:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
+  },
 ];
 
 function AboutUs() {

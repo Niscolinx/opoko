@@ -23,7 +23,9 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
           </p>
         ))}
       </div>
-      <button className="bg-[#12129A] text-white py-6 px-8 text-center">Get started today</button>
+      <button className="bg-[#12129A] text-white py-6 px-8 text-center">
+        Get started today
+      </button>
     </div>
   );
 };
@@ -73,7 +75,13 @@ function Pricing() {
           ))}
         </div>
       </section>
-      <section className="grid gap-8 bg-[#F7F8FC]">
+      <section
+        className="grid gap-8 bg-[#F7F8FC]"
+        style={{
+          boxShadow: `0 0 0 100vmax #F7F8FC`,
+          clipPath: `inset(0 -100vmax)`,
+        }}
+      >
         <p className="font-bold text-[3rem] text-center">
           Choose a plan that suits you
         </p>

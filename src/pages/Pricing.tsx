@@ -10,7 +10,7 @@ interface Card {
 export const Card = ({ title, description, list, amount }: Required<Card>) => {
   return (
     <div
-      className={` w-max-[35rem] grid gap-8 justify-start  text-black bg-white pt-[4rem] $`}
+      className={`w-[35rem] grid gap-8 justify-start  text-black bg-white pt-[4rem] $`}
     >
       <div className="px-8">
         <p className="font-medium text-[3rem] capitalize">{title}</p>
@@ -19,7 +19,7 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
         <div className="grid gap-4 p-8">
           {list.map((item, i) => (
             <p className="flex items-center gap-4">
-              <BsRecordCircle />
+              <BsRecordCircle className="text-[#12129A]" />
               {item}
             </p>
           ))}

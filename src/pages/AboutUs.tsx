@@ -139,7 +139,7 @@ function AboutUs() {
 
         <div className="grid grid-cols-8 relative">
           <div
-            className=""
+            className="bg-white shadow"
             style={{
               gridColumn: '1 / 5',
               zIndex: 2
@@ -181,7 +181,7 @@ function AboutUs() {
           <div
             className="grid gap-16 p-16 absolute bg-[#F2F5FF] rounded-2xl h-full "
             style={{
-              zIndex: 2,
+              zIndex: 1,
               gridColumn: '4 / -1',
             }}
           >

@@ -15,13 +15,18 @@ function Billing() {
     ],
   ]);
 
-  return <div className='grid' style={{
-    gridTemplateColumns: '60% auto'
-  }}>
-
-    <div></div>
-    <div></div>
-  </div>;
+  return (
+    <div
+      className="grid"
+      style={{
+        gridTemplateColumns: '60% auto',
+      }}
+    >
+      <p>
+        Step {step} of {renderPaths.size}
+      </p>
+    </div>
+  );
 }
 
 export default Billing;

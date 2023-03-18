@@ -85,11 +85,11 @@ function Pricing() {
           clipPath: `inset(0 -100vmax)`,
         }}
       >
-        <p className="font-bold text-[3rem] text-center">
+        <p className="font-bold text-[3.6rem] text-center my-10">
           Choose a plan that suits you
         </p>
         <div
-          className="grid"
+          className="grid gap-8"
           style={{
             gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
           }}

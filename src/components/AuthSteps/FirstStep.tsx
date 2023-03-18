@@ -43,7 +43,6 @@ export const FirstLoginStep = () => {
 
   const redirectToRegister = () => {
     pathSignal.value = 'signup'
-    setStep(1)
   };
 
   return (

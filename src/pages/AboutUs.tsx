@@ -140,7 +140,7 @@ function AboutUs() {
           <div
             className=""
             style={{
-              columns: '1 / 4',
+              columns: '1 / 5',
             }}
           >
             {QUESTIONS.map((item, i) => (

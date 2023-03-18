@@ -3,6 +3,7 @@ import { GoLaw } from 'react-icons/go';
 import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
+import { BsRecordCircle, BsCircle } from 'react-icons/bs';
 
 interface Card {
   title: string;

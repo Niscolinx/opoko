@@ -23,7 +23,6 @@ import { SlClose } from 'react-icons/sl';
 type Path = 'signup' | 'login';
 
 export const pathSignal = signal<Path | undefined>(undefined);
-export const isAuthOpen = signal(false);
 
 interface AuthContext {
   step: number;

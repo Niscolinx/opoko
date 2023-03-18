@@ -136,7 +136,9 @@ function AboutUs() {
         <p className="text-[4rem]">Frequently Asked Questions</p>
 
         <div className="grid grid-cols-8">
-          <div></div>
+          <div className='' style={{
+            columns: '1 / 4'
+          }}></div>
           <div></div>
         </div>
       </section>

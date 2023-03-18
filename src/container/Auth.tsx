@@ -16,7 +16,7 @@ import {
   SecondSignUpStep,
 } from '../components/AuthSteps/SecondStep';
 import ThirdStep from '../components/AuthSteps/ThirdStep';
-import { signal  } from '@preact/signals-react';
+import { signal,effect } from '@preact/signals-react';
 
 type Path = 'signup' | 'login';
 

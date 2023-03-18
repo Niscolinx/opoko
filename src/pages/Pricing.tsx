@@ -61,9 +61,11 @@ const QUESTIONS: Question[] = [
   },
 ];
 
-const pricing = ['annually', 'monthly'];
+type Plan = 'annually' | 'monthly';
+const plans: Plan[] = ['annually', 'monthly'];
 
 function Pricing() {
+  const [currentPlan, setCurrentPlan] = useState<Plan>('annually');
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[50vh] content-center clipFull-blue">
@@ -80,7 +82,7 @@ function Pricing() {
         </p>
 
         <div>
-          {pricing.map((item, i) => (
+          {plans.map((item, i) => (
             <></>
           ))}
         </div>

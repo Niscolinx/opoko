@@ -83,7 +83,16 @@ function Pricing() {
 
         <div>
           {plans.map((item, i) => (
-            <></>
+            <div>
+              <input
+                type="radio"
+                name="plan"
+                id={item + i}
+                className="hidden"
+                checked={item === currentPlan}
+                onChange={() => setCurrentPlan(item)}
+              />
+            </div>
           ))}
         </div>
       </section>

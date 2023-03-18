@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { BsRecordCircle } from 'react-icons/bs';
 
-
 interface Card {
   title: string;
   amount: number;
@@ -14,14 +13,15 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
       className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] $`}
     >
       <p className="font-medium text-[3rem]">{title}</p>
-      <p className='font-bold text-[5rem]'>${amount.toLocaleString()}</p>
+      <p className="font-bold text-[5rem]">${amount.toLocaleString()}</p>
       <p className="text-[1.4rem] ">{description}</p>
-      <div className='grid gap-4'>
-        {
-          list.map((item, i) => (
-            <p></p>
-          ))
-        }
+      <div className="grid gap-4">
+        {list.map((item, i) => (
+          <p className="flex items-center gap-4">
+            <BsRecordCircle />
+            {item}
+          </p>
+        ))}
       </div>
     </div>
   );

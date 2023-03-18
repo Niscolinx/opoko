@@ -230,9 +230,9 @@ function AboutUs() {
         gridTemplateColumns: ' 1fr 4fr 1fr'
       }}>
         <img src="/asset/logoWhite.svg" alt="" />
-        <div className="flex gap-6 items-center border-b border-b-orange-600 pb-6">
+        <div className="flex gap-6 items-center border-b border-b-orange-600 pb-6 transition-all duration-75 delay-75">
           {FOOTERLINKS.map((item, i) => (
-            <Link to="/" className='hover:border hover:border-orange-600 py-4 w-[15rem]'>{item}</Link>
+            <Link to="/" className='hover:border rounded-lg p-4'>{item}</Link>
           ))}
         </div>
         <div className="flex items-center gap-4 text-[2rem]">

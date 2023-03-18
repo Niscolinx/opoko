@@ -44,7 +44,7 @@ function Pricing() {
           Our pricing and services are as transparent as possible.
         </p>
 
-        <div className="bg-[#020269] text-white flex py-6 px-8 rounded-[4rem] justify-items-center">
+        <div className="bg-[#020269] text-white flex  justify-items-center rounded-[4rem] overflow-hidden">
           {plans.map((item, i) => (
             <>
               <input
@@ -57,8 +57,8 @@ function Pricing() {
               />
               <label
                 htmlFor={item + i}
-                className={` w-[15rem] text-center  ${
-                  item === currentPlan ? 'text-[#020269] bg-white capitalize' : ''
+                className={` py-4 px-8 w-[15rem] text-center rounded-[4rem] ${
+                  item === currentPlan ? 'text-[#020269] bg-white ' : ''
                 }`}
               >
                 {item}

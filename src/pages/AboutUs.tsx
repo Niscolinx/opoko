@@ -15,7 +15,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
     <div
       className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-white px-[2rem] py-[4rem] ${bgColor}`}
       style={{
-        background: `url(/asset/cardBg.svg)`
+        background: `url(/asset/cardBg.svg) no-repeat`
       }}
     >
       <p className="font-medium text-[3rem]">{title}</p>

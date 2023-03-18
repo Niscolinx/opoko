@@ -2,7 +2,7 @@ import React, { useState, useEffect, SetStateAction, useContext } from 'react';
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 
 import { useNavigate } from 'react-router';
-import { pathSignal, useAuthContext } from '../../container/Auth';
+import { isAuthOpen, pathSignal, useAuthContext } from '../../container/Auth';
 
 export const SecondSignUpStep = () => {
   interface InputTypes {
@@ -226,7 +226,8 @@ export const SecondLoginStep = () => {
     
     setLoading(true);
     setTimeout(() => {
-      navigate('/dashboard');
+      navigate('/');
+      isAuthOpen.value = false
       // dispatch(close())
     }, 500);
   };

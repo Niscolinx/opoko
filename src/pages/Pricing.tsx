@@ -29,9 +29,9 @@ function Pricing() {
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[50vh]  clipFull-blue py-8 ">
-        <div className="grid content-center">
+        <div className="grid content-center justify-items-center gap-8 max-w-[60rem]">
           <p
-            className="text-[6rem] font-extrabold "
+            className="text-[6rem] font-extrabold text-center"
             style={{
               lineHeight: '5rem',
             }}

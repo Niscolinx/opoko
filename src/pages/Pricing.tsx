@@ -1,18 +1,6 @@
-import React, { ReactNode, useState } from 'react';
-import { GoLaw } from 'react-icons/go';
-import { TfiReload } from 'react-icons/tfi';
-import { HiTrendingUp } from 'react-icons/hi';
-import { TbMessageDots } from 'react-icons/tb';
-import { BsRecordCircle, BsCircle } from 'react-icons/bs';
-import { FaTelegramPlane } from 'react-icons/fa';
+import { ReactNode, useState } from 'react';
 
-import {
-  FiChevronRight,
-  FiFacebook,
-  FiInstagram,
-  FiTwitter,
-} from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+
 
 interface Card {
   title: string;

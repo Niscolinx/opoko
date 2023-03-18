@@ -40,25 +40,7 @@ function Auth() {
   const [step, setStep] = useState(0);
   const [path, setPath] = useState<Path>('signup');
 
-  // const { path } = modalData;
-
-  // const AuthSteps = () => {
-  //   switch (step) {
-  //     case 0:
-  //       return path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />;
-  //     case 1:
-  //       return path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />;
-  //     case 2:
-  //       return path === 'signup' ? <ThirdStep /> : <FirstLoginStep />;
-  //     case 3:
-  //       return path === 'signup' ? <FourthStep /> : <FirstLoginStep />;
-
-  //     default:
-  //       return path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />;
-  //   }
-  // };
-
-  // return <AuthSteps />;
+  
 
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],

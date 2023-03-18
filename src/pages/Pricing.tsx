@@ -12,7 +12,7 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
     <div
       className={`h-[40rem] max-w-[27rem] grid gap-8 justify-start  text-black bg-white px-[2rem] pt-[4rem] $`}
     >
-      <p className="font-medium text-[3rem]">{title}</p>
+      <p className="font-medium text-[3rem] capitalize">{title}</p>
       <p className="font-bold text-[5rem]">${amount.toLocaleString()}</p>
       <p className="text-[1.4rem] ">{description}</p>
       <div className="grid gap-4 p-8">
@@ -99,7 +99,7 @@ function Pricing() {
             ]}
           />
           <Card
-            title={'Basic'}
+            title={'professional'}
             amount={1000}
             description={
               'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem'
@@ -111,7 +111,7 @@ function Pricing() {
             ]}
           />
           <Card
-            title={'Basic'}
+            title={'enterprise'}
             amount={350}
             description={
               'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem'

@@ -141,7 +141,7 @@ function AboutUs() {
           <div
             className=""
             style={{
-              columns: '1 / 5',
+              gridColumn: '1 / 5',
             }}
           >
             {QUESTIONS.map((item, i) => (
@@ -178,7 +178,7 @@ function AboutUs() {
           <div
             className="grid gap-16 p-16"
             style={{
-              columns: '4 / -1',
+              gridColumn: '4 / -1',
             }}
           >
             <p className="font-medium">{question.question}</p>

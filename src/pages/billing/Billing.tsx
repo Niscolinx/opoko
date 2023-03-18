@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import First from './steps/First';
 
 function Billing() {
   const [step, setStep] = useState(1);
@@ -6,12 +7,7 @@ function Billing() {
   const renderPaths = new Map<number, JSX.Element>([
     [
       1,
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel alias
-        distinctio illum cum? Asperiores reiciendis voluptatibus fuga repellat
-        et! Incidunt quasi placeat ratione! Minus excepturi fugiat incidunt
-        voluptate amet magni.
-      </>,
+     <First/>,
     ],
   ]);
 

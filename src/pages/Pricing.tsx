@@ -63,6 +63,8 @@ const QUESTIONS: Question[] = [
   },
 ];
 
+const pricing = ['annually', 'monthly']
+
 function Pricing() {
   return (
     <div className="grid gap-[10rem]">
@@ -78,6 +80,7 @@ function Pricing() {
         <p className="text-[#4CFF8F] font-semibold">
           Our pricing and services are as transparent as possible.
         </p>
+
       </section>
     </div>
   );

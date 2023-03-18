@@ -5,6 +5,7 @@ import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
 import { BsRecordCircle, BsCircle, BsTelegram } from 'react-icons/bs';
 import { FiChevronRight, FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 interface Card {
   title: string;
@@ -213,7 +214,15 @@ function AboutUs() {
 
       <footer className="flex items-center justify-between bg-black text-white px-16 py-4">
         <img src="/asset/logo-white.svg" alt="" />
-        <div></div>
+        <div className='flex gap-4 items-center'>
+          {
+            FOOTERLINKS.map((item, i) => (
+              <Link to='/'>
+                
+              </Link>
+            ))
+          }
+        </div>
         <div className='flex items-center gap-4'>
           <a href="/" target="_blank" rel="noopener noreferrer">
             <FiFacebook className="text-white" />

@@ -7,7 +7,7 @@ function Billing() {
   const renderPaths = new Map<number, JSX.Element>([[1, <First />]]);
 
   return (
-    <div className="grid gap-4 h-screen overflow-hidden p-[8rem]">
+    <div className="grid gap-4 h-screen overflow-hidden p-[8rem] content-start">
       <p>
         Step {step} of {renderPaths.size}
       </p>

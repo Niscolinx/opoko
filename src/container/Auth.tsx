@@ -40,7 +40,7 @@ const useAuthContext = () => {
 };
 
 function Auth() {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   const [path, setPath] = useState(pathSignal.value);
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
@@ -58,7 +58,6 @@ function Auth() {
 
   useEffect(() => {
     effect(() => {
-      console.log('path signal', pathSignal.value);
       if (pathSignal.value) {
         setPath(pathSignal.value);
         openDialog();
@@ -66,9 +65,6 @@ function Auth() {
     });
   }, []);
 
-  useEffect(() => {
-    console.log('the path UseEffect', { path });
-  }, [path]);
 
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
@@ -76,10 +72,6 @@ function Auth() {
     [3, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
     [4, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
   ]);
-
-  useEffect(() => {
-    console.log('the renderAuthPath UseEffect', renderAuthPath);
-  }, [renderAuthPath]);
 
   return (
     <AuthContext.Provider

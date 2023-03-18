@@ -137,7 +137,7 @@ function AboutUs() {
       <section className="grid gap-8">
         <p className="text-[4rem]">Frequently Asked Questions</p>
 
-        <div className="grid grid-cols-8 relative">
+        <div className="grid grid-cols-8 relative content-center py-16">
           <div
             className="bg-white shadow"
             style={{

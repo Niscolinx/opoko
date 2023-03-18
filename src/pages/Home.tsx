@@ -1,4 +1,5 @@
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import { pathSignal } from '../container/Auth';
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
           areas of law in triples.
         </p>
         <div className="flex justify-start">
-          <button className="bg-color-blue text-white flex items-center gap-4 px-8 py-4 rounded-2xl text-[2.2rem] ">
+          <button className="bg-color-blue text-white flex items-center gap-4 px-8 py-4 rounded-2xl text-[2.2rem] " onClick={() => {pathSignal.value='signup'}}>
             Get Started <HiOutlineArrowNarrowRight />{' '}
           </button>
         </div>

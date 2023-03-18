@@ -58,7 +58,7 @@ function Pricing() {
               <label
                 htmlFor={item + i}
                 className={` w-[15rem] text-center  ${
-                  item === currentPlan ? '' : ''
+                  item === currentPlan ? 'text-[#020269] bg-white capitalize' : ''
                 }`}
               >
                 {item}

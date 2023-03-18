@@ -15,7 +15,13 @@ function Billing() {
     ],
   ]);
 
-  return <div>Billing</div>;
+  return <div className='grid' style={{
+    gridTemplateColumns: '60% auto'
+  }}>
+
+    <div></div>
+    <div></div>
+  </div>;
 }
 
 export default Billing;

@@ -78,7 +78,7 @@ const QUESTIONS: Question[] = [
 function Pricing() {
   return (
     <div className="grid gap-[10rem]">
-      <section className="grid gap-16 bg-color-blue text-white justify-items-center">
+      <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[50vh] content-center clipFull-blue">
         <p
           className="text-[6rem] font-extrabold"
           style={{

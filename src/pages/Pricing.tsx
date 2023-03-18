@@ -44,7 +44,7 @@ function Pricing() {
           Our pricing and services are as transparent as possible.
         </p>
 
-        <div className="bg-[#020269] text-white rounded-3xl flex py-6 px-8">
+        <div className="bg-[#020269] text-white flex py-6 px-8 rounded-[4rem]">
           {plans.map((item, i) => (
             <>
               <input
@@ -57,7 +57,7 @@ function Pricing() {
               />
               <label
                 htmlFor={item + i}
-                className={` flex items-center ${
+                className={` flex items-center w-[15rem] ${
                   item === currentPlan ? '' : ''
                 }`}
               >

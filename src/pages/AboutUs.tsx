@@ -59,7 +59,7 @@ const QUESTIONS: Question[] = [
 ];
 
 function AboutUs() {
-  const [question, setQuestion] = useState<Question>({});
+  const [question, setQuestion] = useState<Question>(null as any);
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 text-justify">
@@ -151,8 +151,8 @@ function AboutUs() {
                   name="question"
                   className="hidden"
                   id={item.question + i}
-                  checked={item.question === question}
-                  onChange={() => setQuestion(item.question)}
+                  checked={item.question === question.question}
+                  onChange={() => setQuestion(item)}
                 />
                 <label
                   htmlFor={item.question + i}
@@ -160,7 +160,7 @@ function AboutUs() {
                 >
                   <p className='flex items-center gap-4'>
                     <span>
-                      {item.question === question ? (
+                      {item.question === question.question ? (
                         <BsRecordCircle />
                       ) : (
                         <BsCircle />
@@ -176,7 +176,7 @@ function AboutUs() {
             ))}
           </div>
           <div>
-
+                
           </div>
         </div>
       </section>

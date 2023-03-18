@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { GoLaw } from 'react-icons/go';
 import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
@@ -58,7 +58,7 @@ const QUESTIONS: Record<'question' | 'answer', string>[] = [
 ];
 
 function AboutUs() {
-  const []
+  const [question, setQuestion] = useState('')
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 text-justify">

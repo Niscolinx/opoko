@@ -226,11 +226,11 @@ function AboutUs() {
         </button>
       </section>
 
-      <footer className="grid items-center bg-black text-white px-16 py-[8rem] clipFull" style={{
-        gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))'
+      <footer className="grid items-center bg-black text-white py-[8rem] clipFull" style={{
+        gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))'
       }}>
         <img src="/asset/logoWhite.svg" alt="" />
-        <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
+        <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6 col-span-full">
           {FOOTERLINKS.map((item, i) => (
             <Link to="/">{item}</Link>
           ))}

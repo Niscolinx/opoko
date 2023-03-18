@@ -1,4 +1,9 @@
-import React, { useContext } from 'react';
+import React, {
+  createContext,
+  Dispatch,
+  SetStateAction,
+  useContext,
+} from 'react';
 import {
   FirstSignUpStep,
   FirstLoginStep,
@@ -11,6 +16,13 @@ import {
 import ThirdStep from '../components/AuthSteps/ThirdStep';
 // import { AuthContext } from '../Context/AppContext';
 // import { modalSelector } from '../store/features/modal';
+
+interface AuthContext {
+  step: number;
+  setStep: Dispatch<SetStateAction<number>>;
+  path: 'signup' | 'login';
+}
+const AuthContext = createContext<AuthContext>(null as any);
 
 function Auth() {
   // const modalData = useAppSelector(modalSelector);
@@ -37,7 +49,7 @@ function Auth() {
 
   // return <AuthSteps />;
 
-  return <></>
+  return <></>;
 }
 
 export default Auth;

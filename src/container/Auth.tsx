@@ -47,9 +47,9 @@ function Auth() {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const closeDialog = () => {
-    pathSignal.value = undefined;
-
+    
     if (dialogRef.current) {
+      pathSignal.value = undefined;
       dialogRef.current.close();
     }
   };

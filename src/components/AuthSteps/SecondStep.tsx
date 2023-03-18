@@ -179,7 +179,7 @@ export const SecondSignUpStep = () => {
         </div>
 
         <button
-          className="bg-[#40AD6B] text-[1.6rem] py-6 disabled:opacity-50 form__btn"
+          className="bg-color-blue text-[1.6rem] py-6 disabled:opacity-50 form__btn"
           disabled={disabled}
         >
           Continue
@@ -374,7 +374,7 @@ export const SecondLoginStep = () => {
         </div>
 
         <button
-          className="bg-[#40AD6B] text-[1.6rem] py-6 disabled:opacity-50 form__btn"
+          className="bg-color-blue text-[1.6rem] py-6 disabled:opacity-50 form__btn"
           disabled={disabled}
         >
           {loading ? 'Loading...' : 'Continue'}

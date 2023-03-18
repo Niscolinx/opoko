@@ -43,6 +43,13 @@ function Auth() {
   const path = pathSignal.value;
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
+  effect(() => {
+    console.log('path signal', pathSignal.value)
+    if(pathSignal.value){
+      
+    }
+  })
+
   const closeDialog = () => {
     if (dialogRef.current) {
       dialogRef.current.close();

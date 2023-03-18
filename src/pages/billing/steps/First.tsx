@@ -13,7 +13,7 @@ function First() {
           </p>
         </div>
         <form>
-          <div className='max-w-[60rem] grid gap-4'>
+          <div className='max-w-[60rem] grid gap-8'>
             <input
               type="email"
               className="py-4 px-4 border rounded-lg w-[40rem]"
@@ -26,9 +26,9 @@ function First() {
               Privacy Policy for details or to opt-out at any time.
             </p>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 cursor-pointer">
               <input type="checkbox" id="confirm" />
-              <label htmlFor="confirm">Please don't contact me via email</label>
+              <label htmlFor="confirm" className='cursor-pointer'>Please don't contact me via email</label>
             </div>
           </div>
           <button className="px-16 py-4 rounded-2xl bg-color-blue text-white text-center disabled:opacity-50 disabled:cursor-not-allowed mt-[5rem]">

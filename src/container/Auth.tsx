@@ -20,7 +20,7 @@ import { signal, effect } from '@preact/signals-react';
 
 type Path = 'signup' | 'login';
 
-const signalPath = signal<Path>('signup');
+const pathSignal = signal<Path>('signup');
 
 interface AuthContext {
   step: number;
@@ -40,7 +40,7 @@ const useAuthContext = () => {
 
 function Auth() {
   const [step, setStep] = useState(0);
-
+  const path = pathSignal.value;
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const closeDialog = () => {

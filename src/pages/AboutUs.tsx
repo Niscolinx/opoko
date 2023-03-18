@@ -224,7 +224,7 @@ function AboutUs() {
         </button>
       </section>
 
-      <footer className="flex items-center justify-between bg-black text-white px-16 py-4">
+      <footer className="flex items-center justify-between bg-black text-white p-16">
         <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
           {FOOTERLINKS.map((item, i) => (

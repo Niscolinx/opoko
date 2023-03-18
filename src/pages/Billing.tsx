@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Billing() {
-  return (
-    <div>Billing</div>
-  )
+  const [step, setStep] = useState(1);
+
+  const renderPaths = new Map<Record<number, JSX.Element>[]>([[1, <></>]]);
+
+  return <div>Billing</div>;
 }
 
-export default Billing
+export default Billing;

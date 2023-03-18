@@ -3,8 +3,8 @@ import { GoLaw } from 'react-icons/go';
 import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
-import { BsRecordCircle, BsCircle } from 'react-icons/bs';
-import { FiChevronRight, FiFacebook } from 'react-icons/fi';
+import { BsRecordCircle, BsCircle, BsTelegram } from 'react-icons/bs';
+import { FiChevronRight, FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
 
 interface Card {
   title: string;
@@ -215,6 +215,15 @@ function AboutUs() {
         <div>
           <a href="/" target="_blank" rel="noopener noreferrer">
             <FiFacebook className="text-white" />
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <FiTwitter className="text-white" />
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <BsTelegram className="text-white" />
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <FiInstagram className="text-white" />
           </a>
         </div>
       </footer>

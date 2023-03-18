@@ -158,9 +158,17 @@ function AboutUs() {
                   className="flex items-center justify-between"
                 >
                   <p>
-                    
+                    <span>
+                      {item.question === question ? (
+                        <BsRecordCircle />
+                      ) : (
+                        <BsCircle />
+                      )}
+                    </span>
                   </p>
-                  <span><FiChevronRight/></span>
+                  <span>
+                    <FiChevronRight />
+                  </span>
                 </label>
               </div>
             ))}

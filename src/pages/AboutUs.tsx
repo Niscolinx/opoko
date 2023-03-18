@@ -141,7 +141,7 @@ function AboutUs() {
           }}>
             {QUESTIONS.map((item, i) => (
               <div key={i}>
-                
+                  
               </div>
             ))}
           </div>

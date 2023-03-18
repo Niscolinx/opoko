@@ -227,7 +227,7 @@ export const SecondLoginStep = () => {
     setLoading(true);
     setTimeout(() => {
       navigate('/');
-      isAuthOpen.value = false
+      pathSignal.value = undefined
       // dispatch(close())
     }, 500);
   };

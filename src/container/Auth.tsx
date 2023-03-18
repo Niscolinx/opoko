@@ -16,16 +16,15 @@ import {
   SecondSignUpStep,
 } from '../components/AuthSteps/SecondStep';
 import ThirdStep from '../components/AuthSteps/ThirdStep';
-import { signal,effect } from '@preact/signals-react';
+import { signal, effect } from '@preact/signals-react';
 
 type Path = 'signup' | 'login';
 
-const path = signal<Path>('signup')
+const signalPath = signal<Path>('signup');
 
 interface AuthContext {
   step: number;
   setStep: Dispatch<SetStateAction<number>>;
-
 }
 const AuthContext = createContext<AuthContext>(null as any);
 
@@ -39,10 +38,8 @@ const useAuthContext = () => {
   return context;
 };
 
-
 function Auth() {
   const [step, setStep] = useState(0);
-  
 
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
@@ -69,7 +66,7 @@ function Auth() {
     <AuthContext.Provider
       value={{
         step,
-        setStep
+        setStep,
       }}
     >
       <dialog className="dialog" ref={dialogRef}>

@@ -67,8 +67,8 @@ function Auth() {
   }, []);
 
   useEffect(() => {
-    console.log('the path UseEffect', {path})
-  }, [path])
+    console.log('the path UseEffect', { path });
+  }, [path]);
 
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
@@ -76,6 +76,10 @@ function Auth() {
     [3, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
     [4, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
   ]);
+
+  useEffect(() => {
+    console.log('the renderAuthPath UseEffect', renderAuthPath);
+  }, [renderAuthPath]);
 
   return (
     <AuthContext.Provider

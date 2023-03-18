@@ -3,6 +3,7 @@ import React, {
   Dispatch,
   SetStateAction,
   useContext,
+  useEffect,
   useRef,
   useState,
 } from 'react';
@@ -40,7 +41,7 @@ const useAuthContext = () => {
 
 function Auth() {
   const [step, setStep] = useState(0);
-  const [path, setPath] = useState(pathSignal.value)
+  const [path, setPath] = useState(pathSignal.value);
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const closeDialog = () => {
@@ -50,21 +51,23 @@ function Auth() {
   };
 
   const openDialog = () => {
-    console.log('open Dialog', dialogRef.current)
+    console.log('open Dialog', dialogRef.current);
     if (dialogRef.current) {
       dialogRef.current.showModal();
     }
   };
 
-  effect(() => {
+  useEffect(() => {
     console.log('path signal', pathSignal.value);
-    if (pathSignal.value) {
-      setPath(pathSignal.value)
-      openDialog();
-    }
-  });
+    effect(() => {
+      console.log('path signal', pathSignal.value);
+      if (pathSignal.value) {
+        setPath(pathSignal.value);
+        openDialog();
+      }
+    });
+  }, []);
 
- 
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
     [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],

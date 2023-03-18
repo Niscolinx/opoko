@@ -61,10 +61,12 @@ function Auth() {
   useEffect(() => {
     effect(() => {
       if (isAuthOpen.value) {
+        console.log('useEffect close', isAuthOpen.value)
         closeDialog();
       }
 
       if (pathSignal.value) {
+        console.log('pathSignal value', pathSignal.value)
         setPath(pathSignal.value);
         openDialog();
       }

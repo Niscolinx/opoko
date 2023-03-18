@@ -2,6 +2,7 @@ import React, { useState, useEffect, SetStateAction, useContext } from 'react';
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 
 import { useNavigate } from 'react-router';
+import { pathSignal, useAuthContext } from '../../container/Auth';
 
 export const SecondSignUpStep = () => {
   interface InputTypes {
@@ -12,8 +13,11 @@ export const SecondSignUpStep = () => {
 
 
 
-  // const dispatch = useAppDispatch();
-  // const redirectToLogin = () => dispatch(open('login'));
+  const redirectToLogin = () => {
+    pathSignal.value = 'login';
+  };
+
+  const { setStep } = useAuthContext();
   const [disabled, setDisabled] = useState(true);
   const [validationError, setValidationError] = useState<InputTypes | null>(
     null
@@ -97,8 +101,7 @@ export const SecondSignUpStep = () => {
       return false;
     }
 
-    //dispatch(updateUser(inputField));
-    //setStep(2);
+    setStep(3);
   };
 
   const handleInputChange = (e: React.FormEvent<HTMLFormElement>) => {
@@ -187,7 +190,7 @@ export const SecondSignUpStep = () => {
       </form>
 
       <p className="authText mt-10">
-        {/* I have an account? <button onClick={redirectToLogin}> Log In</button> */}
+        I have an account? <button onClick={redirectToLogin}> Log In</button>
       </p>
     </div>
   );
@@ -197,7 +200,11 @@ export const SecondLoginStep = () => {
   const [eyeIcon, setEyeIcon] = useState(false);
   const navigate = useNavigate();
 
-  // const redirectToRegister = () => dispatch(open('signup'));
+   const redirectToRegister = () => {
+     pathSignal.value = 'login';
+   };
+
+   const { setStep } = useAuthContext();
 
   interface InputTypes {
     email: string;

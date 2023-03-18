@@ -27,7 +27,8 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   );
 };
 
-const QUESTIONS: Record<'question' | 'answer', string>[] = [
+type Question = Record<'question' | 'answer', string>;
+const QUESTIONS: Question[] = [
   {
     question: 'What is a Opoko?',
     answer:
@@ -58,7 +59,7 @@ const QUESTIONS: Record<'question' | 'answer', string>[] = [
 ];
 
 function AboutUs() {
-  const [question, setQuestion] = useState('');
+  const [question, setQuestion] = useState<Question>({});
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 text-justify">
@@ -174,7 +175,9 @@ function AboutUs() {
               </div>
             ))}
           </div>
-          <div></div>
+          <div>
+
+          </div>
         </div>
       </section>
     </div>

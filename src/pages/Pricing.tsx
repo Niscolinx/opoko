@@ -1,5 +1,6 @@
 import { ReactNode, useState } from 'react';
 
+
 interface Card {
   title: string;
   description: string;
@@ -21,45 +22,7 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   );
 };
 
-const FOOTERLINKS = [
-  'About',
-  'Features',
-  'Pricing',
-  'Privacy Policy',
-  'Terms of Use',
-  'Legal',
-];
 
-type Question = Record<'question' | 'answer', string>;
-const QUESTIONS: Question[] = [
-  {
-    question: 'What is a Opoko?',
-    answer:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
-  },
-  {
-    question:
-      'Do I need to pay to Opoko even when there is no transaction going on in my business?',
-    answer:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
-  },
-  {
-    question: 'What platforms does Opoko payment gateway support?',
-    answer:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
-  },
-  {
-    question: 'Does Opoko provide international payments support?',
-    answer:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
-  },
-  {
-    question:
-      'Is there any setup fee or annual maintainance fee that I need to pay regularly?',
-    answer:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita iure sit! Et iusto itaque labore consequatur repudiandae voluptatibus aperiam distinctio officiis qui exercitationem cumque architecto, sapiente quasi veritatis nulla!',
-  },
-];
 
 type Plan = 'annually' | 'monthly';
 const plans: Plan[] = ['annually', 'monthly'];

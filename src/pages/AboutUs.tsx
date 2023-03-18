@@ -225,7 +225,7 @@ function AboutUs() {
       </section>
 
       <footer className="flex items-center justify-between bg-black text-white px-16 py-4">
-        <img src="/asset/logo-white.svg" alt="" />
+        <img src="/asset/logoWhite.svg" alt="" />
         <div className="flex gap-4 items-center border-b border-b-orange-600 pb-6">
           {FOOTERLINKS.map((item, i) => (
             <Link to="/">{item}</Link>

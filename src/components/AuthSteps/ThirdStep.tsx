@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import OtpInput from 'react-otp-input';
-import { Toast, ToastContainer} from 'react-toastify/dist/components';
+import { toast, ToastContainer} from 'react-toastify';
 
 function ThirdStep() {
   type ValidationError = {
@@ -41,6 +41,10 @@ function ThirdStep() {
 
     if (otp !== '4444') {
       //return notify('Wrong OTP code');
+      toast('Wrong OTP code', {
+        type: 'error',
+      });
+      
     }
 
     //setStep(3);

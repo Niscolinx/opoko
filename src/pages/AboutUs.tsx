@@ -59,7 +59,7 @@ const QUESTIONS: Question[] = [
 ];
 
 function AboutUs() {
-  const [question, setQuestion] = useState<Question>(null as any);
+  const [question, setQuestion] = useState<Question>(QUESTIONS[0]);
   return (
     <div className="grid gap-[10rem]">
       <section className="grid gap-16 text-justify">

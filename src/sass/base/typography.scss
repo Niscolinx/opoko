@@ -121,11 +121,10 @@ p {
   clip-path: inset(0 -100vmax);
 }
 .clipFull-blue {
-  box-shadow: 0 0 0 100vmax #0C0CAA;
+  box-shadow: 0 0 0 100vmax #0c0caa;
   clip-path: inset(0 -100vmax);
 }
 
-.blogBg{
-
-  background: url('/asset/Ellipse1.svg') 0C0CAA;
+.blogBg {
+  background: url('/asset/Ellipse1.svg') no-repeat #0c0caa, url('/asset/Ellipse1.svg') no-repeat #0c0caa;
 }

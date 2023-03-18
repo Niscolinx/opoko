@@ -59,10 +59,16 @@ function Auth() {
 
   useEffect(() => {
     effect(() => {
+      if(isAuthOpen.value){
+        closeDialog()
+      }
+
       if (pathSignal.value) {
         setPath(pathSignal.value);
         openDialog();
       }
+
+    
     });
   }, []);
 

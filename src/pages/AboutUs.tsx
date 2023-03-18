@@ -217,11 +217,11 @@ function AboutUs() {
       >
         <div className="">
           <p className="text-white text-[3rem]">Have a specific question?</p>
-          <p className="text-gray-500 text-[3.6rem]">
+          <p className="text-[#464545] text-[3.6rem]">
             Please send us a message
           </p>
         </div>
-        <button className="px-16 py-4 rounded-2xl bg-color-blue text-white font-medium">
+        <button className="px-16 py-6 rounded-2xl bg-color-blue text-white font-medium self-center">
           Ask a question
         </button>
       </section>
@@ -233,7 +233,7 @@ function AboutUs() {
             <Link to="/">{item}</Link>
           ))}
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 text-[2rem]">
           <a href="/" target="_blank" rel="noopener noreferrer">
             <FiFacebook className="text-white" />
           </a>

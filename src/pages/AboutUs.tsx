@@ -4,7 +4,7 @@ import { TfiReload } from 'react-icons/tfi';
 import { HiTrendingUp } from 'react-icons/hi';
 import { TbMessageDots } from 'react-icons/tb';
 import { BsRecordCircle, BsCircle } from 'react-icons/bs';
-import { FiChevronRight } from 'react-icons/fi';
+import { FiChevronRight, FiFacebook } from 'react-icons/fi';
 
 interface Card {
   title: string;
@@ -200,21 +200,21 @@ function AboutUs() {
       >
         <div className="">
           <p className="text-white text-[3rem]">Have a specific question?</p>
-          <p className="text-gray-500 text-[3.6rem]">Please send us a message</p>
+          <p className="text-gray-500 text-[3.6rem]">
+            Please send us a message
+          </p>
         </div>
         <button className="px-16 py-4 rounded-2xl bg-color-blue text-white font-medium">
           Ask a question
         </button>
       </section>
 
-      <footer className='flex items-center justify-between bg-black text-white px-16 py-4'>
+      <footer className="flex items-center justify-between bg-black text-white px-16 py-4">
         <img src="/asset/logo-white.svg" alt="" />
-        <div>
-
-        </div>
+        <div></div>
         <div>
           <a href="/" target="_blank" rel="noopener noreferrer">
-            <img src="" alt="" />
+            <FiFacebook className="text-white" />
           </a>
         </div>
       </footer>

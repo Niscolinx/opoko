@@ -37,12 +37,12 @@ function First() {
         </form>
       </section>
       <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8">
-        <div className="grid gap-4 justify-items-start w-full outline">
+        <div className="grid gap-4 justify-items-start w-full">
           <p className='font-medium text--[2rem]'>Summary</p>
           <div className='border-t border-b py-6 w-full'>
             <img src="/asset/logo.svg" alt="" />
             <p className='capitalize text-color-blue'>Subscription plan (basic)</p>
-          <div className='bg-color-orange rounded-2xl h-[10rem] w-full'>&nbsp;</div>
+          <div className='bg-color-orange rounded-2xl h-[10rem]'>&nbsp;</div>
           </div>
         </div>
       </section>

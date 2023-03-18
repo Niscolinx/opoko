@@ -2,7 +2,7 @@ import React, { useState, useEffect, SetStateAction, useContext } from 'react';
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 
 import { useNavigate } from 'react-router';
-import { isAuthOpen, pathSignal, useAuthContext } from '../../container/Auth';
+import { pathSignal, useAuthContext } from '../../container/Auth';
 
 export const SecondSignUpStep = () => {
   interface InputTypes {

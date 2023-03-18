@@ -161,7 +161,7 @@ function AboutUs() {
                   }`}
                 >
                   <p className="flex items-center gap-4">
-                    <span>
+                    <span className="text-color-blue">
                       {item.question === question.question ? (
                         <BsRecordCircle />
                       ) : (

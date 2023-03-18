@@ -175,7 +175,12 @@ function AboutUs() {
               </div>
             ))}
           </div>
-          <div className="grid gap-16 p-16">
+          <div
+            className="grid gap-16 p-16"
+            style={{
+              columns: '4 / -1',
+            }}
+          >
             <p className="font-medium">{question.question}</p>
             <p>{question.answer}</p>
           </div>

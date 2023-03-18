@@ -34,8 +34,10 @@ function First() {
           </button>
         </form>
       </section>
-      <section className="bg-[#F1F5FF]">
-        
+      <section className="bg-[#F1F5FF] py-10">
+            <div className='grid gap-4 justify-items-center'>
+
+            </div>
       </section>
     </div>
   );

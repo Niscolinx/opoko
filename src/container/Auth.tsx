@@ -47,7 +47,6 @@ function Auth() {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const closeDialog = () => {
-    
     if (dialogRef.current) {
       pathSignal.value = undefined;
       dialogRef.current.close();
@@ -56,7 +55,7 @@ function Auth() {
 
   const openDialog = () => {
     if (dialogRef.current) {
-      setStep(1)
+      setStep(1);
       dialogRef.current.showModal();
     }
   };
@@ -67,14 +66,12 @@ function Auth() {
       //   console.log('useEffect close', isAuthOpen.value);
       //   closeDialog();
       // }
-      
 
       if (pathSignal.value) {
         setPath(pathSignal.value);
         openDialog();
-      }
-      else{
-        closeDialog()
+      } else {
+        closeDialog();
       }
     });
   }, []);
@@ -82,8 +79,8 @@ function Auth() {
   const renderAuthPath = new Map<number, JSX.Element>([
     [1, path === 'signup' ? <FirstSignUpStep /> : <FirstLoginStep />],
     [2, path === 'signup' ? <SecondSignUpStep /> : <SecondLoginStep />],
-    [3, path === 'signup' ? <ThirdStep /> : <FirstLoginStep />],
-    [4, path === 'signup' ? <FourthStep /> : <FirstLoginStep />],
+    [3, <ThirdStep />],
+    [4, <FourthStep />],
   ]);
 
   return (

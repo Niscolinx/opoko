@@ -141,7 +141,10 @@ function AboutUs() {
           }}>
             {QUESTIONS.map((item, i) => (
               <div key={i}>
-                  
+                  <input type='radio' name='question' className='hidden' id={item.question + i} />
+                  <label htmlFor={item.question + i} className='flex items-center justify-between'>
+                    <p></p>
+                  </label>
               </div>
             ))}
           </div>

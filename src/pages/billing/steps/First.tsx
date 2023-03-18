@@ -2,7 +2,9 @@ import React from 'react';
 
 function First() {
   return (
-    <div className="">
+    <div className="grid gap-8" style={{
+        gridTemplateColumns: '60% auto'
+    }}>
       <section className="grid gap-4">
         <div>
           <p className="font-medium text-[2.8rem]">Enter your email address</p>
@@ -34,13 +36,13 @@ function First() {
           </button>
         </form>
       </section>
-      <section className="bg-[#F1F5FF] py-10 text-[#666666]">
-        <div className="grid gap-4 justify-items-start">
+      <section className="bg-[#F1F5FF] py-10 text-[#666666] p-8">
+        <div className="grid gap-4 justify-items-start w-full outline">
           <p className='font-medium text--[2rem]'>Summary</p>
-          <div className='border-t border-b py-6'>
-            <img src="/assets/logo.svg" alt="" />
+          <div className='border-t border-b py-6 w-full'>
+            <img src="/asset/logo.svg" alt="" />
             <p className='capitalize text-color-blue'>Subscription plan (basic)</p>
-          <div className='text-color-orange rounded-2xl h-[36rem]'>&nbsp;</div>
+          <div className='bg-color-orange rounded-2xl h-[10rem] w-full'>&nbsp;</div>
           </div>
         </div>
       </section>

@@ -1,6 +1,5 @@
 import { ReactNode, useState } from 'react';
 
-
 interface Card {
   title: string;
   description: string;
@@ -22,8 +21,6 @@ export const Card = ({ title, description, Icon, bgColor }: Required<Card>) => {
   );
 };
 
-
-
 type Plan = 'annually' | 'monthly';
 const plans: Plan[] = ['annually', 'monthly'];
 
@@ -31,20 +28,22 @@ function Pricing() {
   const [currentPlan, setCurrentPlan] = useState<Plan>('annually');
   return (
     <div className="grid gap-[10rem]">
-      <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[50vh] content-center clipFull-blue">
-        <p
-          className="text-[6rem] font-extrabold"
-          style={{
-            lineHeight: '5rem',
-          }}
-        >
-          Simple and affordable pricing
-        </p>
-        <p className="text-[#4CFF8F] font-semibold">
-          Our pricing and services are as transparent as possible.
-        </p>
+      <section className="grid gap-16 bg-color-blue text-white justify-items-center h-[50vh]  clipFull-blue py-8 ">
+        <div className="grid content-center">
+          <p
+            className="text-[6rem] font-extrabold "
+            style={{
+              lineHeight: '5rem',
+            }}
+          >
+            Simple and affordable pricing
+          </p>
+          <p className="text-[#4CFF8F] font-semibold">
+            Our pricing and services are as transparent as possible.
+          </p>
+        </div>
 
-        <div className="bg-[#020269] text-white flex  justify-items-center rounded-[4rem] overflow-hidden">
+        <div className="bg-[#020269] text-white flex  justify-items-center rounded-[4rem] overflow-hidden self-end">
           {plans.map((item, i) => (
             <>
               <input

@@ -23,7 +23,7 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
           </p>
         ))}
       </div>
-      <button>Get started today</button>
+      <button className="bg-[#12129A] text-white py-6 px-8 text-center">Get started today</button>
     </div>
   );
 };

@@ -157,8 +157,8 @@ function AboutUs() {
                 />
                 <label
                   htmlFor={item.question + i}
-                  className={`flex items-center justify-between py-10 px-6 gap-16 ${
-                    item.question === question.question && 'bg-[#FAFBFF]'
+                  className={`flex items-center justify-between py-10 px-6 gap-16 cursor-pointer ${
+                    item.question === question.question && 'bg-[#F2F5FF]'
                   }`}
                 >
                   <p className="flex items-center gap-8">

@@ -39,7 +39,9 @@ export const FirstSignUpStep = () => {
 };
 
 export const FirstLoginStep = () => {
-    const { setStep } = useAuthContext();
+  const { setStep } = useAuthContext();
+
+  const redirectToRegister = () => {};
 
   return (
     <div className="firstStep">
@@ -62,9 +64,8 @@ export const FirstLoginStep = () => {
       </Fragment>
       <p className="authText">
         Don't have an account?{' '}
-        {/* <button onClick={redirectToRegister}> Create an account</button> */}
+        <button onClick={redirectToRegister}> Create an account</button>
       </p>
     </div>
   );
 };
-

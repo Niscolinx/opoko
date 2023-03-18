@@ -79,7 +79,7 @@ function Pricing() {
   
   return (
     <div className="grid gap-[10rem]">
-      <section className="grid gap-16 text-justify">
+      <section className="grid gap-16 bg-color-blue text-white justify-items-center">
      
       </section>
     

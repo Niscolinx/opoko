@@ -17,7 +17,11 @@ export const Card = ({ title, description, list, amount }: Required<Card>) => {
       <p className='font-bold text-[5rem]'>${amount.toLocaleString()}</p>
       <p className="text-[1.4rem] ">{description}</p>
       <div className='grid gap-4'>
-
+        {
+          list.map((item, i) => (
+            <p></p>
+          ))
+        }
       </div>
     </div>
   );

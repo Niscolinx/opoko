@@ -142,10 +142,9 @@ function AboutUs() {
             className="bg-white shadow"
             style={{
               gridColumn: '1 / 5',
-              zIndex: 2
+              zIndex: 2,
             }}
           >
-            
             {QUESTIONS.map((item, i) => (
               <div key={i}>
                 <input
@@ -159,7 +158,7 @@ function AboutUs() {
                 <label
                   htmlFor={item.question + i}
                   className={`flex items-center justify-between py-10 px-6 gap-16 ${
-                    item.question === question.question && 'bg-[#F2F5FF]'
+                    item.question === question.question && 'bg-[#FAFBFF]'
                   }`}
                 >
                   <p className="flex items-center gap-8">
@@ -180,16 +179,15 @@ function AboutUs() {
             ))}
           </div>
           <div
-            className="grid gap-16 p-16 absolute bg-[#F2F5FF] rounded-2xl h-full "
+            className=" p-16 absolute bg-[#F2F5FF] rounded-2xl h-full "
             style={{
               zIndex: 1,
               gridColumn: '4 / -1',
             }}
           >
-            <div>
-
-            <p className="font-medium">{question.question}</p>
-            <p>{question.answer}</p>
+            <div className="grid gap-16 ml-[25%]">
+              <p className="font-bold">{question.question}</p>
+              <p>{question.answer}</p>
             </div>
           </div>
         </div>

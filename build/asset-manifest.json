@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01a1c196.css",
+    "main.js": "/static/js/main.bd30ba02.js",
+    "static/media/priceEllipse.svg": "/static/media/priceEllipse.9d135d4b8bc353ed2f46.svg",
+    "index.html": "/index.html",
+    "main.01a1c196.css.map": "/static/css/main.01a1c196.css.map",
+    "main.bd30ba02.js.map": "/static/js/main.bd30ba02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01a1c196.css",
+    "static/js/main.bd30ba02.js"
+  ]
+}

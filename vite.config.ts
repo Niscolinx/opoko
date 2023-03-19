@@ -14,7 +14,7 @@ export default defineConfig({
   //   commonjsOptions: {
   //     esmExternals: ['preact'],
   //   },
-  },
+  //},
   resolve: {
     // alias: [
     //   {

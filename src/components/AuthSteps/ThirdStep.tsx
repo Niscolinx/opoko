@@ -18,8 +18,8 @@ function ThirdStep() {
   } | null>(null);
   const [isOtpLengthInValid, setIsOtpLengthInValid] = useState(true);
   const [loading, setLoading] = useState(false);
-  const [validationError, setValidationError] =
-    useState<ValidationError | null>(null);
+  // const [validationError, setValidationError] =
+  //   useState<ValidationError | null>(null);
 
   const otpHandler = (input: string) => {
     setOtp(input);
